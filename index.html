@@ -94,9 +94,9 @@
     input::placeholder,textarea::placeholder{color:#aaa}
     textarea{min-height:110px;resize:vertical}
     .hint{font-size:10px;color:#888}
-    .checkline{display:flex;align-items:flex-start;gap:10px;margin:22px 0;font-size:11px;color:#666}
-    .checkline input{width:17px;height:17px;flex:none;margin-top:2px;accent-color:#111}
-    .submit-row{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+    
+    
+    .submit-row{margin-top:22px;display:flex;align-items:center;gap:15px;flex-wrap:wrap}
     .submit-btn{background:#111;color:#fff;border:0;border-radius:10px;padding:15px 22px;font-weight:900;min-width:220px;transition:.2s}
     .submit-btn:hover{background:var(--yellow);color:#111}
     .secure-note{font-size:10px;color:#888;max-width:240px}
@@ -123,7 +123,7 @@
     [dir="rtl"] .fields select{direction:rtl;text-align:right}
     [dir="rtl"] .contact-mini{text-align:right;line-height:2.15}
     [dir="rtl"] .contact-mini a{margin-inline-start:0;margin-inline-end:0}
-    [dir="rtl"] .checkline{flex-direction:row}
+    
     [dir="rtl"] .form-section-title{flex-direction:row}
     [dir="rtl"] .submit-row{flex-direction:row}
     [dir="rtl"] .eyebrow{letter-spacing:0}
@@ -247,7 +247,7 @@ h1{font-size:clamp(38px,4.7vw,62px);line-height:1.35;letter-spacing:-1px;margin:
 .section{padding:88px 0}.section-head{max-width:720px;margin-bottom:42px}.section-head,[dir=rtl] .section-head,[dir=rtl] .section-head h2{text-align:center}.section-head p{font-size:14px;line-height:2}.kicker{letter-spacing:0;color:#74631d;font-size:12px}h2{font-size:36px}h3{line-height:1.7}
 .benefits{gap:20px}.benefit{padding:30px;border-radius:20px;background:#fffefb;min-height:220px}.benefit-icon{background:#f3f0d8;border-radius:50%;font-size:25px}.benefit h3{font-size:18px}.benefit p{line-height:1.95;color:#68705f;font-size:13px}
 .form-layout{grid-template-columns:.7fr 1.3fr;gap:32px}.form-aside{background:#eaf0e3;color:#24301b;border:1px solid #dbe4d2;padding:30px;border-radius:24px}.form-aside .eyebrow{color:#637346}.form-aside .eyebrow:before{background:#849759}.form-aside h3{font-size:27px;line-height:1.75;margin-top:15px}.form-aside p,.aside-list li{color:#55634a;line-height:1.9}.contact-mini{border-color:#cfd9c4;color:#55634a}.contact-mini a{color:#263c18;font-size:16px}.contact-mini .email-caption{display:block;margin-top:14px;font-size:11px}.contact-mini a[href^=mailto]{font-size:13px}
-form{border-radius:24px;padding:34px;background:#fffefb}.form-title h3{font-size:23px}.required-note{color:#68705f}.form-section-title{margin-top:30px;font-size:14px;padding-bottom:13px;gap:12px}.form-section-title span{width:28px;height:28px;background:#eff1e7;color:#52633b}.fields{gap:20px 16px}label{font-size:13px}input,select,textarea{background:#fafbf7;border-color:#d9ddcf;border-radius:10px;padding:13px 14px;min-height:49px;font-size:14px}input::placeholder,textarea::placeholder{color:#797f70}.hint,.secure-note{color:#6a735f;font-size:11px}.checkline{font-size:12px;line-height:1.9}.submit-btn{background:#f6d949;color:#1f2918;border-radius:12px;min-height:52px}.submit-btn:hover{background:#e7c936}.secure-note{max-width:270px}.status{font-size:13px;line-height:1.9}
+form{border-radius:24px;padding:34px;background:#fffefb}.form-title h3{font-size:23px}.required-note{color:#68705f}.form-section-title{margin-top:30px;font-size:14px;padding-bottom:13px;gap:12px}.form-section-title span{width:28px;height:28px;background:#eff1e7;color:#52633b}.fields{gap:20px 16px}label{font-size:13px}input,select,textarea{background:#fafbf7;border-color:#d9ddcf;border-radius:10px;padding:13px 14px;min-height:49px;font-size:14px}input::placeholder,textarea::placeholder{color:#797f70}.hint,.secure-note{color:#6a735f;font-size:11px}.submit-btn{background:#f6d949;color:#1f2918;border-radius:12px;min-height:52px}.submit-btn:hover{background:#e7c936}.secure-note{max-width:270px}.status{font-size:13px;line-height:1.9}
 .steps{gap:22px}.step{border-top:0;border-inline-start:3px solid #e7cf54;border-radius:14px;padding:27px;background:#fffefb}.step p{font-size:13px;line-height:1.9}.step-no{color:#7b6b28}
 footer{padding:35px 0;background:#151714}.footer-text{font-size:11px;color:#b4bba9;line-height:1.9;max-width:540px}.footer-copy{color:#b4bba9}.footer-inner{gap:30px}.footer-inner>img{box-shadow:none!important}
 .skip-link{position:absolute;top:-100px;inset-inline-start:20px;z-index:100;background:#f6d949;padding:12px;border-radius:8px}.skip-link:focus{top:8px}
@@ -300,12 +300,12 @@ html[lang=fr] h2{font-weight:700;letter-spacing:-.035em;line-height:1.25}
 .benefit h3{font-size:21px}.benefit p,.step p{font-size:15px;line-height:1.95}
 .visual-title{font-size:27px;line-height:1.6}.visual-sub{font-size:14px}.visual-row b{font-size:15px;font-weight:700}.visual-row small{font-size:12px}
 label{font-size:14px;font-weight:700}input,select,textarea{font-size:16px;line-height:1.6}.form-section-title{font-size:16px}.form-title h3{font-size:26px}.form-aside p,.aside-list li{font-size:15px}
-.eyebrow,.kicker{font-size:13px;font-weight:700}.primary-btn,.submit-btn{font-size:16px;font-weight:700}.nav-link{font-size:14px}.lang-switch{font-size:13px}.hero-points{font-size:13px}.checkline{font-size:14px}.secure-note,.hint{font-size:12px}.footer-text{font-size:12px}.faq-list summary{font-size:18px}.faq-list details p{font-size:15px}
+.eyebrow,.kicker{font-size:13px;font-weight:700}.primary-btn,.submit-btn{font-size:16px;font-weight:700}.nav-link{font-size:14px}.lang-switch{font-size:13px}.hero-points{font-size:13px}.secure-note,.hint{font-size:12px}.footer-text{font-size:12px}.faq-list summary{font-size:18px}.faq-list details p{font-size:15px}
 .brand,.brand-caption{font-family:inherit}.thank h1{font-size:clamp(32px,5vw,48px);line-height:1.55}.thank p{font-size:18px;line-height:2}.thank .kicker{font-size:14px}.thank .brand{font-family:var(--font-fr);font-size:11px;letter-spacing:.12em}
 html[lang=fr] .hero-copy{font-size:16px}html[lang=fr] .section-head p{font-size:15px}html[lang=fr] .benefit p,html[lang=fr] .step p{font-size:14px}
 @media(max-width:600px){html[lang=ar] h1{font-size:40px;line-height:1.4}.hero-copy{font-size:16px}.section-head p{font-size:15px}.visual-title{font-size:25px}.form-title h3{font-size:24px}.faq-list summary{font-size:16px}.hero-points{font-size:11px}.thank p{font-size:16px}}
 .brand-name{display:inline-flex;align-items:center;font-weight:900;font-size:20px;color:#26351f;padding:10px 14px;border:1px solid #dfe5d8;border-radius:12px;background:#f7f8f2;white-space:nowrap}footer .brand-name{color:#fff;border-color:#4b5543;background:#20271d}@media(max-width:600px){.brand-name{font-size:17px;padding:8px 10px}}
-.privacy-note{font-size:12px;line-height:1.9;color:#59634f;background:#f4f6ef;border:1px solid #dfe6d6;border-radius:10px;padding:12px;margin:18px 0}\n
+
 .page-step{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 22px;padding:12px 16px;border:1px solid #e4e8dc;border-radius:14px;background:#f8f9f4;color:#46523d;font-size:13px}
 .page-step button,.back-welcome{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
 .page-step button,.back-welcome{background:#e9eddf;color:#35422d}
@@ -399,12 +399,7 @@ html[lang=fr] .hero h1 { font-size: clamp(42px, 4.8vw, 70px); }
 #formulaire > .container { max-width: 1050px; }
 .form-layout { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 26px; }
 .form-layout > div { min-width: 0; }
-.page-step, .completion, .privacy-note {
-  color: var(--muted);
-  background: #fff7d9;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-}
+.page-step, .completion, 
 .page-step { margin-bottom: 12px; }
 .page-step button { background: #f8e9ac; color: var(--ink); }
 form {
@@ -420,7 +415,7 @@ form {
 .fields { gap: 16px; }
 input, select, textarea { background: #fffaf0; border-color: #d8cda9; }
 input::placeholder, textarea::placeholder { color: #726856; }
-.privacy-note { padding: 12px 14px; font-size: 13px; }
+
 .form-aside {
   background: var(--black);
   border: 1px solid var(--black);
@@ -525,8 +520,6 @@ footer .brand-name { background: #2b2415; color: var(--paper); border-color: #67
 <div class="field full"><label data-ar="رقم الهاتف *" data-fr="Téléphone *" for="phone">رقم الهاتف *</label><input autocomplete="tel" id="phone" inputmode="tel" maxlength="20" name="phone" placeholder="06XXXXXXXX" required type="tel" /></div>
 <div class="field full"><label data-ar="المدينة *" data-fr="Ville *" for="city">المدينة *</label><input autocomplete="address-level2" id="city" name="city" placeholder="مثال: فاس" required maxlength="150" /></div>
 </div>
-<p class="privacy-note" data-ar="تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية." data-fr="Confidentialité : vos informations seront transmises à la base de données de ce projet indépendant pour le suivi de votre demande. Ne saisissez aucun mot de passe, donnée bancaire ou document d’identité. Cette page est indépendante et n’est le site officiel d’aucune institution financière.">تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية.</p>
-<label class="checkline"><input id="consent" required type="checkbox"/><span data-ar="أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *" data-fr="J’accepte l’enregistrement de mes coordonnées et de ma ville pour répondre à ma demande. *">أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *</span></label>
 <div class="submit-row"><button class="submit-btn" type="submit"><span data-ar="إرسال المعلومات" data-fr="Envoyer mes informations">إرسال المعلومات</span> <span aria-hidden="true">→</span></button><span class="secure-note" data-ar="لن يتم إرسال موقعك إلا إذا وافقت على تحديده." data-fr="Votre position ne sera transmise que si vous autorisez sa détection.">لن يتم إرسال موقعك إلا إذا وافقت على تحديده.</span></div>
 <div aria-live="polite" class="status" id="formStatus" role="status"></div>
 </form>
@@ -650,8 +643,8 @@ footer .brand-name { background: #2b2415; color: var(--paper); border-color: #67
 
       if (!valid) {
         statusBox.textContent = currentLang === "fr"
-          ? "Vérifiez le nom, le téléphone marocain, la ville et votre consentement."
-          : "يرجى التحقق من الاسم الكامل ورقم الهاتف المغربي والمدينة والموافقة على استخدام البيانات.";
+          ? "Vérifiez le nom, le téléphone marocain et la ville."
+          : "يرجى التحقق من الاسم الكامل ورقم الهاتف المغربي والمدينة.";
         statusBox.classList.add("error");
         statusBox.scrollIntoView({behavior:"smooth", block:"nearest"});
         return;
@@ -668,7 +661,7 @@ footer .brand-name { background: #2b2415; color: var(--paper); border-color: #67
         phone: phoneClean,
         city: readValue('city'),
         address: null,
-        consent: document.getElementById('consent').checked,
+        consent: false,
         language: submittedLang
       };
       form.dataset.sending = 'true';
@@ -752,7 +745,7 @@ footer .brand-name { background: #2b2415; color: var(--paper); border-color: #67
  topButton.addEventListener('click', () => window.scrollTo({top:0, behavior:reduceMotion.matches ? 'instant' : 'smooth'}));
  const required = [...form.querySelectorAll('[required]')];
  function updateCompletion() {
-  const complete = required.filter(el => el.type === 'checkbox' ? el.checked : el.value.trim() && el.checkValidity()).length;
+  const complete = required.filter(el => el.value.trim() && el.checkValidity()).length;
   const percentage = Math.round(complete / required.length * 100);
   document.querySelector('#completionValue').textContent=percentage+'%';
   document.querySelector('.completion-track span').style.width=percentage+'%';
