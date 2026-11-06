@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#111111" name="theme-color"/>
+<meta content="قدّم مشروع وكالتك بخطوات واضحة، وجهّز طلب التواصل باللغة العربية أو الفرنسية." name="description"/>
+<title>مشروع تجاري مستقل | طلب دراسة</title>
+<style>
+    :root{
+      --black:#111111;--ink:#191919;--muted:#6d6d6d;--yellow:#ffdf00;
+      --yellow-dark:#e8c900;--paper:#ffffff;--soft:#f5f5f2;--line:#e8e8e3;
+      --green:#17834b;--radius:20px;--shadow:0 18px 55px rgba(0,0,0,.09)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,"Noto Sans Arabic",sans-serif;line-height:1.6}
+    body[dir="rtl"]{font-family:"Tahoma","Arial",sans-serif}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .top-note{background:#171717;color:#fff;text-align:center;padding:8px 15px;font-size:12px;letter-spacing:.1px}
+    .top-note strong{color:var(--yellow)}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand img{width:145px;height:auto;object-fit:contain;display:block}
+    .brand-caption{border-inline-start:1px solid #ddd;padding-inline-start:13px;color:#666;font-size:11px;line-height:1.35}
+    .nav-actions{display:flex;align-items:center;gap:14px}
+    .nav-link{font-size:13px;font-weight:700;color:#444}
+    .lang-switch{border:1px solid #dedede;background:#fff;border-radius:999px;padding:9px 14px;font-weight:800;font-size:12px}
+    .lang-switch:hover{background:var(--yellow);border-color:var(--yellow)}
+    .hero{background:var(--black);color:#fff;position:relative;overflow:hidden;padding:76px 0 82px}
+    .hero:before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:var(--yellow);opacity:.12;inset-inline-end:-180px;top:-260px;filter:blur(2px)}
+    .hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(255,223,0,.25);border-radius:50%;inset-inline-end:6%;bottom:-270px}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:60px;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--yellow);font-weight:800;font-size:12px;letter-spacing:1.3px;text-transform:uppercase}
+    .eyebrow:before{content:"";width:25px;height:2px;background:var(--yellow)}
+    h1{font-size:clamp(38px,5.2vw,66px);line-height:1.08;letter-spacing:-2px;margin:20px 0 18px;max-width:700px}
+    h1 span{color:var(--yellow)}
+    .hero-copy{color:#d0d0d0;max-width:570px;font-size:16px;margin:0 0 28px}
+    .primary-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--yellow);color:#111;border:0;border-radius:10px;padding:15px 23px;font-weight:900;box-shadow:0 8px 24px rgba(255,223,0,.16);transition:.2s}
+    .primary-btn:hover{background:#fff;transform:translateY(-2px)}
+    .hero-points{display:flex;flex-wrap:wrap;gap:18px;margin-top:28px;color:#ddd;font-size:12px}
+    .hero-points span{display:flex;align-items:center;gap:7px}
+    .tick{display:inline-grid;place-items:center;width:19px;height:19px;border-radius:50%;background:var(--yellow);color:#111;font-weight:900}
+    .visual-card{background:#fff;color:#111;border-radius:22px;padding:25px;box-shadow:0 25px 70px rgba(0,0,0,.3);transform:rotate(1.5deg);max-width:420px;margin-inline:auto}
+    .visual-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding-bottom:17px}
+    .visual-head img{width:118px;height:auto}
+    .visual-label{background:#fff5a8;padding:6px 10px;border-radius:6px;font-size:10px;font-weight:900}
+    .visual-title{font-size:21px;font-weight:900;line-height:1.25;margin:23px 0 8px}
+    .visual-sub{font-size:12px;color:#777;margin:0 0 20px}
+    .visual-row{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #eee;font-size:12px}
+    .visual-icon{width:36px;height:36px;display:grid;place-items:center;background:#fff6a8;border-radius:10px;font-weight:900}
+    .visual-row b{display:block;font-size:12px}
+    .visual-row small{color:#888}
+    .visual-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:20px;font-size:11px;color:#777}
+    .visual-bottom strong{font-size:18px;color:#111}
+    .section{padding:82px 0}
+    .section.soft{background:var(--soft)}
+    .section-head{text-align:center;max-width:690px;margin:0 auto 42px}
+    .kicker{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8a7600;font-weight:900}
+    h2{font-size:clamp(28px,3.4vw,42px);line-height:1.18;letter-spacing:-1px;margin:10px 0 12px;color:#111}
+    .section-head p{color:var(--muted);margin:0}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .benefit{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;min-height:190px}
+    .benefit-icon{width:46px;height:46px;border-radius:13px;background:#fff5a6;display:grid;place-items:center;font-size:21px;margin-bottom:18px;color:#111}
+    .benefit h3{font-size:17px;margin:0 0 8px}
+    .benefit p{font-size:13px;color:#777;margin:0}
+    .form-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:42px;align-items:start}
+    .form-aside{background:#111;color:#fff;border-radius:20px;padding:30px;position:sticky;top:110px}
+    .form-aside h3{font-size:25px;line-height:1.2;margin:0 0 14px}
+    .form-aside p{font-size:13px;color:#c8c8c8}
+    .aside-list{list-style:none;padding:0;margin:25px 0 0}
+    .aside-list li{display:flex;gap:11px;align-items:flex-start;margin:15px 0;color:#eee;font-size:13px}
+    .aside-list .tick{flex:none}
+    .contact-mini{border-top:1px solid #393939;margin-top:25px;padding-top:18px;font-size:12px;color:#bbb}
+    .contact-mini a{color:var(--yellow);font-weight:800}
+    form{background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;box-shadow:var(--shadow)}
+    .form-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:24px}
+    .form-title h3{font-size:22px;margin:0}
+    .required-note{font-size:11px;color:#888}
+    .form-section-title{font-size:13px;font-weight:900;margin:25px 0 14px;padding-bottom:9px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px}
+    .form-section-title span{width:25px;height:25px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-size:11px}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:flex;flex-direction:column;gap:7px;min-width:0}
+    .field.full{grid-column:1/-1}
+    label{font-size:12px;font-weight:800;color:#333}
+    label i{color:#c00;font-style:normal}
+    input,select,textarea{width:100%;border:1px solid #deded9;border-radius:9px;background:#fff;padding:13px 13px;color:#171717;outline:none;transition:.2s}
+    input:focus,select:focus,textarea:focus{border-color:#c4a900;box-shadow:0 0 0 3px rgba(255,223,0,.2)}
+    input::placeholder,textarea::placeholder{color:#aaa}
+    textarea{min-height:110px;resize:vertical}
+    .hint{font-size:10px;color:#888}
+    .checkline{display:flex;align-items:flex-start;gap:10px;margin:22px 0;font-size:11px;color:#666}
+    .checkline input{width:17px;height:17px;flex:none;margin-top:2px;accent-color:#111}
+    .submit-row{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+    .submit-btn{background:#111;color:#fff;border:0;border-radius:10px;padding:15px 22px;font-weight:900;min-width:220px;transition:.2s}
+    .submit-btn:hover{background:var(--yellow);color:#111}
+    .secure-note{font-size:10px;color:#888;max-width:240px}
+    .status{display:none;margin-top:18px;padding:14px;border-radius:10px;font-size:12px}
+    .status.success{display:block;background:#e9f7ef;color:#146c3b;border:1px solid #bfe8ce}
+    .status.error{display:block;background:#fff0f0;color:#a32222;border:1px solid #f1c5c5}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+    .step{border-top:3px solid var(--yellow);padding:22px 20px;background:#fff;border-radius:0 0 14px 14px}
+    .step-no{font-size:12px;color:#9b8500;font-weight:900}
+    .step h3{margin:8px 0;font-size:17px}
+    .step p{font-size:12px;color:#777;margin:0}
+    footer{background:#111;color:#fff;padding:34px 0}
+    .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .footer-inner img{width:125px;background:#fff;border-radius:5px;padding:5px}
+    .footer-text{font-size:10px;color:#aaa;max-width:560px}
+    .footer-text a{color:var(--yellow);text-decoration:underline}
+    .footer-copy{font-size:10px;color:#777;white-space:nowrap}
+    .contact-mini{line-height:2}
+    .contact-mini a{display:inline-block;direction:ltr;unicode-bidi:embed}
+    input[type="tel"],input[type="email"],input[type="number"]{direction:ltr;text-align:left}
+    [dir="rtl"] .fields .field{text-align:right}
+    [dir="rtl"] .fields input:not([type="tel"]):not([type="email"]):not([type="number"]),
+    [dir="rtl"] .fields textarea{ text-align:right; direction:rtl}
+    [dir="rtl"] .fields select{direction:rtl;text-align:right}
+    [dir="rtl"] .contact-mini{text-align:right;line-height:2.15}
+    [dir="rtl"] .contact-mini a{margin-inline-start:0;margin-inline-end:0}
+    [dir="rtl"] .checkline{flex-direction:row}
+    [dir="rtl"] .form-section-title{flex-direction:row}
+    [dir="rtl"] .submit-row{flex-direction:row}
+    [dir="rtl"] .eyebrow{letter-spacing:0}
+    [dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] .section-head{text-align:right}
+    [dir="rtl"] .hero-copy{margin-inline-start:0;margin-inline-end:auto}
+    [dir="rtl"] .form-title,[dir="rtl"] .footer-inner{direction:rtl}
+    [dir="rtl"] .form-aside{text-align:right}
+    [dir="rtl"] .visual-card{transform:rotate(-1.5deg)}
+    @media(max-width:850px){
+      .hero-grid,.form-layout{grid-template-columns:1fr;gap:34px}
+      .hero{padding:58px 0}
+      .visual-card{width:min(100%,440px)}
+      .form-aside{position:static}
+      .benefits{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .container{width:min(100% - 28px,1160px)}
+      .nav{height:68px}.brand img{width:112px}.brand-caption,.nav-link{display:none}
+      .hero{padding:48px 0 55px}
+      h1{font-size:39px;letter-spacing:-1.2px}
+      .hero-copy{font-size:14px}
+      .visual-card{padding:19px}
+      .section{padding:58px 0}
+      .benefits,.steps{grid-template-columns:1fr}
+      form{padding:20px 16px}
+      .fields{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .form-title{align-items:flex-start;flex-direction:column}
+      .submit-btn{width:100%}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+      .footer-copy{white-space:normal}
+    }
+
+    /* --- Logo contrast & visual refinement (v2) --- */
+    .brand img,
+    .visual-head img,
+    footer .footer-inner > img {
+      display:block;
+      width:165px;
+      height:auto;
+      max-width:100%;
+      object-fit:contain;
+      object-position:center;
+      background:#111111;
+      padding:7px 10px;
+      border-radius:9px;
+      box-shadow:0 3px 12px rgba(0,0,0,.12);
+    }
+    .brand {gap:15px}
+    .brand-caption {
+      border-inline-start:1px solid #d8d8d8;
+      padding-inline-start:15px;
+      font-size:12px;
+      line-height:1.45;
+    }
+    .visual-head {
+      gap:16px;
+      min-height:67px;
+    }
+    .visual-head img {width:155px}
+    footer .footer-inner > img {
+      width:155px;
+      background:#111;
+      border:1px solid #444;
+    }
+    .hero {isolation:isolate}
+    .hero:before {pointer-events:none}
+    .visual-card {
+      border:1px solid rgba(0,0,0,.06);
+      transform:rotate(0);
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    .visual-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 30px 80px rgba(0,0,0,.34);
+    }
+    .benefit {
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .benefit:hover {
+      transform:translateY(-4px);
+      box-shadow:0 14px 32px rgba(0,0,0,.07);
+    }
+    .lang-switch:focus-visible,
+    .primary-btn:focus-visible,
+    .submit-btn:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline:3px solid rgba(232,201,0,.55);
+      outline-offset:3px;
+    }
+    @media(max-width:600px) {
+      .brand img {width:138px;padding:7px 9px}
+      .visual-head img {width:138px}
+      footer .footer-inner > img {width:145px}
+      .brand {gap:10px}
+      .brand-caption {font-size:10px;padding-inline-start:10px}
+    }
+
+  
+
+/* Refined editorial layout, Arabic-first and responsive. */
+:root{--black:#151714;--ink:#22261e;--yellow:#f6d949;--soft:#f7f7f0;--line:#e4e6db;--radius:24px;--shadow:0 16px 50px #2432180a}
+body{font-family:Tahoma,Arial,sans-serif;line-height:1.85;background:#fffefb}
+html{scroll-padding-top:105px}header{background:#fffefbf5;backdrop-filter:blur(15px)}
+.container{width:min(1160px,calc(100% - 48px))}.nav{height:92px}
+.brand img{box-shadow:none;border-radius:12px}.brand-caption{font-size:12px}
+.nav-link{border-bottom:1px solid #c0a52c;padding:7px 0}.lang-switch{padding:10px 20px;background:#f6f6ef}
+.hero{padding:90px 0 98px;background:radial-gradient(ellipse at 5% 0%,#3c4430 0,transparent 55%),#151714}
+.hero:before{width:650px;height:650px;border:1px solid #f6d94933;background:transparent;opacity:1;top:-220px;inset-inline-end:-230px}
+.hero:after{width:500px;height:500px;inset-inline-end:-150px;bottom:-300px;border-color:#f6d94922}
+.hero-grid{grid-template-columns:1.15fr .85fr;gap:70px}.eyebrow{font-size:12px;letter-spacing:0}
+h1{font-size:clamp(38px,4.7vw,62px);line-height:1.35;letter-spacing:-1px;margin:22px 0}
+[dir=rtl] h1,[dir=rtl] h2{letter-spacing:0;line-height:1.5}.hero-copy{font-size:16px;color:#c8cebf;line-height:2;max-width:550px}
+.primary-btn{padding:15px 27px;border-radius:12px;box-shadow:none}.hero-points{gap:20px;font-size:11px;color:#c8cebf}
+.visual-card,[dir=rtl] .visual-card{transform:none;border-radius:24px;background:#fffef9;padding:28px;width:100%;max-width:400px;box-shadow:16px 18px 0 #ffffff08}
+.visual-head img{width:133px}.visual-label{background:#f6d949;font-size:10px;border-radius:20px;padding:6px 12px;white-space:nowrap}
+.visual-title{font-size:24px;line-height:1.7;margin-top:25px}.visual-sub{font-size:12px;line-height:1.9}.visual-row{padding:17px 0;gap:14px}.visual-row b{font-size:13px}.visual-row small{color:#6c7164}.visual-icon{background:#f0f1e8;width:42px;height:42px;border-radius:50%;font-size:12px;color:#5c663e}.visual-bottom{padding-top:5px}.visual-bottom strong{color:#a5aa91}
+.section{padding:88px 0}.section-head{max-width:720px;margin-bottom:42px}.section-head,[dir=rtl] .section-head,[dir=rtl] .section-head h2{text-align:center}.section-head p{font-size:14px;line-height:2}.kicker{letter-spacing:0;color:#74631d;font-size:12px}h2{font-size:36px}h3{line-height:1.7}
+.benefits{gap:20px}.benefit{padding:30px;border-radius:20px;background:#fffefb;min-height:220px}.benefit-icon{background:#f3f0d8;border-radius:50%;font-size:25px}.benefit h3{font-size:18px}.benefit p{line-height:1.95;color:#68705f;font-size:13px}
+.form-layout{grid-template-columns:.7fr 1.3fr;gap:32px}.form-aside{background:#eaf0e3;color:#24301b;border:1px solid #dbe4d2;padding:30px;border-radius:24px}.form-aside .eyebrow{color:#637346}.form-aside .eyebrow:before{background:#849759}.form-aside h3{font-size:27px;line-height:1.75;margin-top:15px}.form-aside p,.aside-list li{color:#55634a;line-height:1.9}.contact-mini{border-color:#cfd9c4;color:#55634a}.contact-mini a{color:#263c18;font-size:16px}.contact-mini .email-caption{display:block;margin-top:14px;font-size:11px}.contact-mini a[href^=mailto]{font-size:13px}
+form{border-radius:24px;padding:34px;background:#fffefb}.form-title h3{font-size:23px}.required-note{color:#68705f}.form-section-title{margin-top:30px;font-size:14px;padding-bottom:13px;gap:12px}.form-section-title span{width:28px;height:28px;background:#eff1e7;color:#52633b}.fields{gap:20px 16px}label{font-size:13px}input,select,textarea{background:#fafbf7;border-color:#d9ddcf;border-radius:10px;padding:13px 14px;min-height:49px;font-size:14px}input::placeholder,textarea::placeholder{color:#797f70}.hint,.secure-note{color:#6a735f;font-size:11px}.checkline{font-size:12px;line-height:1.9}.submit-btn{background:#f6d949;color:#1f2918;border-radius:12px;min-height:52px}.submit-btn:hover{background:#e7c936}.secure-note{max-width:270px}.status{font-size:13px;line-height:1.9}
+.steps{gap:22px}.step{border-top:0;border-inline-start:3px solid #e7cf54;border-radius:14px;padding:27px;background:#fffefb}.step p{font-size:13px;line-height:1.9}.step-no{color:#7b6b28}
+footer{padding:35px 0;background:#151714}.footer-text{font-size:11px;color:#b4bba9;line-height:1.9;max-width:540px}.footer-copy{color:#b4bba9}.footer-inner{gap:30px}.footer-inner>img{box-shadow:none!important}
+.skip-link{position:absolute;top:-100px;inset-inline-start:20px;z-index:100;background:#f6d949;padding:12px;border-radius:8px}.skip-link:focus{top:8px}
+@media(max-width:900px){.hero-grid{gap:35px}.form-layout{grid-template-columns:1fr}.form-aside{position:static}.hero{padding:65px 0}.hero-grid{grid-template-columns:1fr}.hero-grid>div:first-child{max-width:650px}.visual-card{max-width:540px;margin:0}.benefits{grid-template-columns:1fr}.benefit{min-height:0}.footer-inner{flex-wrap:wrap}}
+@media(max-width:600px){.container{width:calc(100% - 32px)}.nav{height:76px;gap:12px}.nav-actions{gap:8px}.brand img{width:128px}.lang-switch{padding:8px 13px}.hero{padding:42px 0 52px}h1{font-size:38px}.hero-copy{font-size:14px}.hero-points{gap:12px;font-size:10px}.visual-card{padding:22px}.section{padding:55px 0}h2{font-size:28px}.section-head{margin-bottom:28px}.form-aside{padding:24px}form{padding:24px 18px}.form-title{gap:5px}.fields{gap:17px}.submit-row{gap:12px}.secure-note{max-width:none}.steps{gap:14px}.footer-inner{gap:18px}.visual-head{gap:8px}.visual-head img{width:128px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Motion and interaction system */
+:root{--ease:cubic-bezier(.2,.75,.25,1)}
+::selection{background:#f6d949;color:#151714}body{overflow-x:clip}
+.reading-progress{height:3px;position:fixed;inset:0 0 auto;z-index:60;pointer-events:none}.reading-progress span{display:block;width:100%;height:100%;background:#f6d949;transform:scaleX(0);transform-origin:right;will-change:transform}
+header{transition:box-shadow .4s,background .4s}.is-scrolled header{box-shadow:0 8px 30px #1825120c;background:#fffefbf7}
+.hero{padding:100px 0 108px;min-height:690px}.hero-grid{z-index:2}.hero-grid-lines{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff04 1px,transparent 1px),linear-gradient(90deg,#ffffff04 1px,transparent 1px);background-size:75px 75px;mask-image:linear-gradient(180deg,#0008,transparent)}
+.ambient{position:absolute;inset:0;overflow:hidden;pointer-events:none}.ambient i{position:absolute;width:450px;height:450px;border-radius:50%;filter:blur(65px);background:#8ba94a13;top:-160px;left:-150px;animation:ambient-drift 14s ease-in-out infinite alternate}.ambient i:nth-child(2){width:240px;height:240px;background:#e7cd4810;top:55%;left:65%;animation-delay:-7s}.ambient i:nth-child(3){width:10px;height:10px;filter:none;top:20%;left:43%;background:#f6d94950;box-shadow:140px 280px 0 -2px #f6d94955,-90px 350px 0 -3px #ffffff80,90px 80px 0 -3px #ffffff80;animation-duration:9s}
+@keyframes ambient-drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(60px,45px,0)}}
+.hero:before{animation:orbit 24s linear infinite;border-style:dashed}.hero:after{animation:orbit 40s linear infinite reverse}@keyframes orbit{to{transform:rotate(360deg)}}
+.hero-grid>div:first-child>*{animation:hero-enter .9s var(--ease) both}.hero-grid>div:first-child>:nth-child(2){animation-delay:.1s}.hero-grid>div:first-child>:nth-child(3){animation-delay:.2s}.hero-grid>div:first-child>:nth-child(4){animation-delay:.3s}.hero-grid>div:first-child>:nth-child(5){animation-delay:.4s}
+@keyframes hero-enter{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.visual-card{position:relative;animation:hero-enter 1.1s .2s var(--ease) both;transition:transform .6s var(--ease),box-shadow .6s}.visual-card:hover,[dir=rtl] .visual-card:hover{transform:translateY(-7px);box-shadow:20px 25px 0 #ffffff0b}.visual-label{display:flex;align-items:center;gap:6px}.visual-label:before{content:'';width:5px;height:5px;border-radius:50%;background:#3f471d;box-shadow:0 0 0 4px #ffffff50;animation:badge-pulse 3s ease-in-out infinite}@keyframes badge-pulse{50%{box-shadow:0 0 0 7px #ffffff00}}
+.visual-row{transition:padding .3s,background .3s}.visual-row:hover{padding-inline:8px;background:#f5f6ed}.visual-icon{transition:background .3s,transform .3s}.visual-row:hover .visual-icon{background:#f6d949;transform:rotate(-8deg)}
+.primary-btn,.submit-btn,.lang-switch{position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s,background .3s}.primary-btn:after,.submit-btn:after{content:'';position:absolute;inset:-100% auto -100% -70%;width:45%;background:linear-gradient(90deg,transparent,#ffffff55,transparent);transform:rotate(25deg);transition:left .65s}.primary-btn:hover:after,.submit-btn:hover:after{left:140%}.primary-btn:hover,.submit-btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #bda52a25}.primary-btn:active,.submit-btn:active{transform:scale(.98)}.primary-btn>span:last-child{transition:transform .3s}.primary-btn:hover>span:last-child{transform:translate(3px,-3px)}
+.benefit{position:relative;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s,border-color .45s}.benefit:after{content:'';position:absolute;inset:auto 24px 0;height:3px;background:#e6cb48;transform:scaleX(0);transition:transform .4s}.benefit:hover{transform:translateY(-7px);border-color:#dbd5ad;box-shadow:0 20px 45px #29371b0b}.benefit:hover:after{transform:scaleX(1)}.benefit-icon{transition:transform .4s,background .4s}.benefit:hover .benefit-icon{transform:rotate(-9deg);background:#f6d949}
+.motion-ready .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--delay,0ms)}.motion-ready .reveal.visible{opacity:1;transform:none}
+.completion{margin:0 0 28px;padding:18px;background:#f5f6ed;border-radius:12px}.completion-head{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#5c684b;margin-bottom:9px}.completion-head b{color:#354624;font-size:13px}.completion-track{height:5px;background:#e1e6d6;border-radius:10px;overflow:hidden}.completion-track span{display:block;width:0;height:100%;background:#788c4c;border-radius:inherit;transition:width .5s var(--ease)}.field{transition:transform .3s}.field:focus-within label{color:#6a7e3d}.field input,.field select,.field textarea{transition:border-color .25s,box-shadow .25s,background .25s}.field:focus-within input,.field:focus-within select,.field:focus-within textarea{background:#fff}
+.step{transition:transform .4s,box-shadow .4s}.step:hover{transform:translateY(-5px);box-shadow:0 12px 32px #1f30100a}.step-no{letter-spacing:1px;font-size:11px}
+.faq-section{border-top:1px solid #e4e6db}.faq-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:start}.faq-layout h2{margin-top:14px;font-size:35px;line-height:1.6}.faq-intro{color:#6a735f;font-size:14px;max-width:360px}.faq-list details{border-bottom:1px solid #e4e6db;padding:0 0 22px;margin-bottom:22px}.faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:22px;font-size:16px;font-weight:bold;color:#29351e}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:'+';font-family:Arial;font-size:25px;font-weight:normal;color:#758754;transition:transform .3s}.faq-list details[open] summary:after{transform:rotate(45deg)}.faq-list details p{font-size:14px;color:#68725e;line-height:2;margin:16px 0 0;animation:hero-enter .4s var(--ease)}
+.back-top{position:fixed;inset-inline-end:24px;bottom:24px;width:46px;height:46px;border-radius:50%;border:1px solid #dce0d2;background:#fffefbf5;box-shadow:0 5px 25px #1b2b1117;color:#3d4e2a;font-size:22px;z-index:30;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .3s,transform .3s,visibility .3s}.back-top.shown{opacity:1;visibility:visible;transform:none}.back-top:hover{background:#f6d949;transform:translateY(-3px)}
+@media(max-width:900px){.hero{min-height:0;padding:65px 0}.faq-layout{gap:35px;grid-template-columns:1fr}.faq-layout h2 br{display:none}.faq-intro{max-width:none}}
+@media(max-width:600px){.hero{padding:45px 0 58px}.faq-layout h2{font-size:28px}.faq-list summary{font-size:14px}.back-top{bottom:17px;inset-inline-end:17px;width:42px;height:42px}.ambient i{filter:blur(35px)}.completion{padding:14px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.motion-ready .reveal{opacity:1;transform:none}}
+
+
+.submit-btn:disabled{opacity:.65;cursor:wait;transform:none;box-shadow:none}
+
+/* Header logo beside One WorLd. */
+.brand{flex-wrap:wrap;gap:10px}
+.brand-logo-frame{display:inline-flex;align-items:center;justify-content:center;flex:none;background:#000;border:1px solid #333;border-radius:10px;padding:10px 12px}
+.brand .brand-logo-frame img{display:block;width:165px;max-width:100%;height:auto;background:transparent;padding:0;border-radius:0;box-shadow:none;object-fit:contain}
+@media(max-width:600px){.nav{height:auto;min-height:76px;padding-block:12px}.brand{gap:7px}.brand .brand-name{font-size:15px;padding:7px 8px}.brand-logo-frame{padding:8px}.brand .brand-logo-frame img{width:110px}}
+</style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><style>
+/* Arabic and French typography */
+:root{--font-ar:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;--font-fr:"Inter","Segoe UI",Arial,sans-serif}
+html{font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body,body[dir=rtl],html[lang=ar] body{font-family:var(--font-ar);font-weight:400;line-height:1.85}
+html[lang=fr] body{font-family:var(--font-fr);line-height:1.75}
+button,input,select,textarea{font-family:inherit}
+h1,h2,h3,.visual-title{font-family:inherit;font-weight:800}
+html[lang=ar] h1{font-size:clamp(40px,5vw,66px);line-height:1.38;letter-spacing:0}
+html[lang=ar] h2{font-size:clamp(29px,3.2vw,42px);line-height:1.5;letter-spacing:0}
+html[lang=ar] h3{line-height:1.65;letter-spacing:0}
+html[lang=fr] h1{font-weight:700;letter-spacing:-.045em;line-height:1.14}
+html[lang=fr] h2{font-weight:700;letter-spacing:-.035em;line-height:1.25}
+.hero-copy{font-size:18px;line-height:1.95}.section-head p{font-size:16px;line-height:1.95}
+.benefit h3{font-size:21px}.benefit p,.step p{font-size:15px;line-height:1.95}
+.visual-title{font-size:27px;line-height:1.6}.visual-sub{font-size:14px}.visual-row b{font-size:15px;font-weight:700}.visual-row small{font-size:12px}
+label{font-size:14px;font-weight:700}input,select,textarea{font-size:16px;line-height:1.6}.form-section-title{font-size:16px}.form-title h3{font-size:26px}.form-aside p,.aside-list li{font-size:15px}
+.eyebrow,.kicker{font-size:13px;font-weight:700}.primary-btn,.submit-btn{font-size:16px;font-weight:700}.nav-link{font-size:14px}.lang-switch{font-size:13px}.hero-points{font-size:13px}.checkline{font-size:14px}.secure-note,.hint{font-size:12px}.footer-text{font-size:12px}.faq-list summary{font-size:18px}.faq-list details p{font-size:15px}
+.brand,.brand-caption{font-family:inherit}.thank h1{font-size:clamp(32px,5vw,48px);line-height:1.55}.thank p{font-size:18px;line-height:2}.thank .kicker{font-size:14px}.thank .brand{font-family:var(--font-fr);font-size:11px;letter-spacing:.12em}
+html[lang=fr] .hero-copy{font-size:16px}html[lang=fr] .section-head p{font-size:15px}html[lang=fr] .benefit p,html[lang=fr] .step p{font-size:14px}
+@media(max-width:600px){html[lang=ar] h1{font-size:40px;line-height:1.4}.hero-copy{font-size:16px}.section-head p{font-size:15px}.visual-title{font-size:25px}.form-title h3{font-size:24px}.faq-list summary{font-size:16px}.hero-points{font-size:11px}.thank p{font-size:16px}}
+.brand-name{display:inline-flex;align-items:center;font-weight:900;font-size:20px;color:#26351f;padding:10px 14px;border:1px solid #dfe5d8;border-radius:12px;background:#f7f8f2;white-space:nowrap}footer .brand-name{color:#fff;border-color:#4b5543;background:#20271d}@media(max-width:600px){.brand-name{font-size:17px;padding:8px 10px}}\n.privacy-note{font-size:12px;line-height:1.9;color:#59634f;background:#f4f6ef;border:1px solid #dfe6d6;border-radius:10px;padding:12px;margin:18px 0}\n
+/* Two-step welcome and application flow */
+body[data-page="welcome"] #formulaire{display:none}
+body[data-page="welcome"] #approach,body[data-page="welcome"] .steps,body[data-page="welcome"] .faq-section{display:none}
+body[data-page="form"] .hero,body[data-page="form"] #approach,body[data-page="form"] .steps,body[data-page="form"] .faq-section{display:none}
+body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);padding-top:45px}
+.page-step{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 22px;padding:12px 16px;border:1px solid #e4e8dc;border-radius:14px;background:#f8f9f4;color:#46523d;font-size:13px}
+.page-step button,.location-btn,.back-welcome{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
+.page-step button,.back-welcome{background:#e9eddf;color:#35422d}
+.location-btn{width:100%;background:#26351f;color:#fff;min-height:50px;margin-top:10px}
+.location-status{font-size:13px;line-height:1.8;margin-top:9px;color:#59634f}
+@media(max-width:600px){.page-step{align-items:stretch;flex-direction:column}.page-step button{width:100%}}
+</style></head>
+<body data-page="welcome"><div aria-hidden="true" class="reading-progress"><span></span></div><a class="skip-link" data-ar="الانتقال إلى الاستمارة" data-fr="Aller au formulaire" href="#formulaire">الانتقال إلى الاستمارة</a>
+<header>
+<div class="container nav">
+<a aria-label="الصفحة الرئيسية" class="brand" href="#accueil">
+<span class="brand-name" dir="ltr">One WorLd</span>
+<span class="brand-logo-frame"><img src="data:image/webp;base64,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" alt="Wafacash" width="165" height="46"/></span>
+<span class="brand-caption" data-ar="مشروع وكالة&lt;br&gt;طلب شراكة" data-fr="Projet d'agence&lt;br&gt;Demande de partenariat">مشروع وكالة<br/>طلب شراكة</span>
+</a>
+<div class="nav-actions"><a class="nav-link" data-ar="عن المشروع" data-fr="Le projet" href="#approach">عن المشروع</a>
+<a class="nav-link" data-ar="إيداع طلب" data-fr="Déposer une demande" href="#formulaire">إيداع طلب</a>
+<button aria-label="Passer en français" class="lang-switch" id="languageToggle" type="button">Français</button>
+</div>
+</div>
+</header>
+<main>
+<section class="hero" id="accueil"><div aria-hidden="true" class="ambient"><i></i><i></i><i></i></div><div aria-hidden="true" class="hero-grid-lines"></div>
+<div class="container hero-grid">
+<div>
+<div class="eyebrow" data-ar="حوّل مشروعك إلى واقع" data-fr="DONNEZ VIE À VOTRE PROJET">حوّل مشروعك إلى واقع</div>
+<h1 data-ar="مشروعك اليوم.&lt;br&gt;&lt;span&gt;بداية جديدة&lt;/span&gt; للغد." data-fr="Votre projet aujourd’hui.&lt;br&gt;&lt;span&gt;Un nouveau départ&lt;/span&gt; pour demain.">مشروعك اليوم.<br/><span>بداية جديدة</span> للغد.</h1>
+<p class="hero-copy" data-ar="هل تطمح إلى فتح وكالة للخدمات المالية في المغرب؟ عرّف بمشروعك، وحدّد الموقع المقترح، وجهّز طلب التواصل في خطوات بسيطة." data-fr="Vous souhaitez ouvrir une agence de services financiers au Maroc ? Présentez votre projet, précisez son emplacement et préparez votre demande en quelques étapes.">هل تطمح إلى فتح وكالة للخدمات المالية في المغرب؟ عرّف بمشروعك، وحدّد الموقع المقترح، وجهّز طلب التواصل في خطوات بسيطة.</p>
+<button class="primary-btn" id="startApplication" type="button"><span data-ar="ابدأ الآن" data-fr="Commencer">ابدأ الآن</span><span aria-hidden="true">↗</span></button>
+<div class="hero-points">
+<span><b class="tick">✓</b><span data-ar="استمارة سهلة" data-fr="Formulaire simple">استمارة سهلة</span></span>
+<span><b class="tick">✓</b><span data-ar="مشروع داخل المغرب" data-fr="Projet au Maroc">مشروع داخل المغرب</span></span>
+<span><b class="tick">✓</b><span data-ar="بيانات واضحة ومنظّمة" data-fr="Des informations structurées">بيانات واضحة ومنظّمة</span></span>
+</div>
+</div>
+<div aria-label="مراحل إعداد ملف المشروع" class="visual-card">
+<div class="visual-head">
+<span class="brand-name" aria-label="مشروع مستقل">مشروع مستقل</span>
+<span class="visual-label" data-ar="مشروع جديد" data-fr="NOUVEAU PROJET">مشروع جديد</span>
+</div>
+<div class="visual-title" data-ar="خطوتك الأولى نحو مشروع مدروس." data-fr="Le premier pas vers un projet bien préparé.">خطوتك الأولى نحو مشروع مدروس.</div>
+<p class="visual-sub" data-ar="بعض المعلومات لفهم مبادرتك بشكل أفضل." data-fr="Quelques informations pour mieux comprendre votre initiative.">بعض المعلومات لفهم مبادرتك بشكل أفضل.</p>
+<div class="visual-row"><span class="visual-icon">01</span><span><b data-ar="معلوماتك الشخصية" data-fr="Votre profil">معلوماتك الشخصية</b><small data-ar="الهوية وبيانات التواصل" data-fr="Identité et coordonnées">الهوية وبيانات التواصل</small></span></div>
+<div class="visual-row"><span class="visual-icon">02</span><span><b data-ar="موقع المشروع" data-fr="Votre localité">موقع المشروع</b><small data-ar="المدينة والموقع المقترح" data-fr="Ville et emplacement envisagé">المدينة والموقع المقترح</small></span></div>
+<div class="visual-row"><span class="visual-icon">03</span><span><b data-ar="تفاصيل المشروع" data-fr="Votre projet">تفاصيل المشروع</b><small data-ar="المحل والخبرة والميزانية" data-fr="Local, expérience et budget">المحل والخبرة والميزانية</small></span></div>
+<div class="visual-bottom"><span data-ar="ملف الترشيح" data-fr="Dossier de candidature">ملف الترشيح</span><strong>W.</strong></div>
+</div>
+</div>
+</section>
+<section class="section soft" id="approach">
+<div class="container">
+<div class="section-head">
+<div class="kicker" data-ar="خطّط لانطلاقة مدروسة" data-fr="PRÉPAREZ VOTRE LANCEMENT">خطّط لانطلاقة مدروسة</div>
+<h2 data-ar="أسّس مشروعك على رؤية واضحة" data-fr="Donnez une base solide à votre projet">أسّس مشروعك على رؤية واضحة</h2>
+<p data-ar="ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك." data-fr="Définissez les besoins de votre projet : les services envisagés, les compétences nécessaires et un emplacement adapté à votre clientèle.">ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك.</p>
+</div>
+<div class="benefits">
+<article class="benefit"><div class="benefit-icon">↗</div><h3 data-ar="خدمات قريبة من العملاء" data-fr="Des services de proximité">خدمات قريبة من العملاء</h3><p data-ar="حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك." data-fr="Identifiez les besoins du quartier et les services que vous souhaitez proposer.">حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك.</p></article>
+<article class="benefit"><div class="benefit-icon">◎</div><h3 data-ar="التكوين والاستعداد" data-fr="Formation et préparation">التكوين والاستعداد</h3><p data-ar="حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع." data-fr="Précisez vos besoins en formation et en gestion, puis renseignez-vous sur les conditions d’accompagnement.">حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع.</p></article>
+<article class="benefit"><div class="benefit-icon">⌖</div><h3 data-ar="اختيار الموقع المناسب" data-fr="Un emplacement adapté">اختيار الموقع المناسب</h3><p data-ar="وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك." data-fr="Précisez la situation du local, sa superficie et son accessibilité pour présenter clairement votre projet.">وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="formulaire">
+<div class="container">
+<div class="section-head">
+<div class="kicker" data-ar="طلب الترشيح" data-fr="CANDIDATURE">طلب الترشيح</div>
+<h2 data-ar="قدّم معلومات مشروعك المستقل" data-fr="Présentez votre projet d'agence">قدّم معلومات مشروعك المستقل</h2>
+<p data-ar="أدخل معلوماتك وبيانات مشروعك، ثم تابع إلى الخطوة التالية." data-fr="Renseignez vos coordonnées et les informations de votre projet, puis passez à l’étape suivante.">أدخل معلوماتك وبيانات مشروعك، ثم تابع إلى الخطوة التالية.</p>
+</div>
+<div class="form-layout">
+<aside class="form-aside">
+<div class="eyebrow" data-ar="قبل البدء" data-fr="AVANT DE COMMENCER">قبل البدء</div>
+<h3 data-ar="ملف واضح يبدأ بمعلومات دقيقة." data-fr="Un dossier clair commence par de bonnes informations.">ملف واضح يبدأ بمعلومات دقيقة.</h3>
+<p data-ar="وضّح وضعك بدقة. لا ترسل بيانات بنكية أو كلمات مرور أو وثائق حساسة عبر هذه الاستمارة." data-fr="Décrivez votre situation avec précision. Ne transmettez pas de données bancaires, de mots de passe ou de documents sensibles via ce formulaire.">وضّح وضعك بدقة. لا ترسل بيانات بنكية أو كلمات مرور أو وثائق حساسة عبر هذه الاستمارة.</p>
+<ul class="aside-list">
+<li><b class="tick">✓</b><span data-ar="بيانات التواصل معك" data-fr="Vos coordonnées pour être recontacté">بيانات التواصل معك</span></li>
+<li><b class="tick">✓</b><span data-ar="المدينة والحي المقترحان" data-fr="La ville et le quartier envisagés">المدينة والحي المقترحان</span></li>
+<li><b class="tick">✓</b><span data-ar="معلومات المحل وخبرتك" data-fr="Les informations sur votre local et votre expérience">معلومات المحل وخبرتك</span></li>
+</ul>
+<div class="contact-mini"><span data-ar="للاستفسارات، استخدم بيانات التواصل التي يعلنها صاحب هذا المشروع بشكل مستقل." data-fr="Pour toute question, utilisez les coordonnées publiées par le responsable de ce projet indépendant.">للاستفسارات، استخدم بيانات التواصل التي يعلنها صاحب هذا المشروع بشكل مستقل.</span></div>
+</aside>
+<div class="page-step"><span data-ar="الخطوة 2 من 2 — المعلومات المطلوبة" data-fr="Étape 2 sur 2 — Vos informations">الخطوة 2 من 2 — المعلومات المطلوبة</span><button type="button" id="backToWelcome" data-ar="العودة إلى الترحيب" data-fr="Retour à l’accueil">العودة إلى الترحيب</button></div>
+<form id="agencyForm" novalidate="">
+<div class="form-title"><h3 data-ar="معلومات التواصل والموقع" data-fr="Coordonnées et localisation">معلومات التواصل والموقع</h3><span class="required-note" data-ar="* حقول إلزامية" data-fr="* Champs obligatoires">* حقول إلزامية</span></div>
+<div class="completion"><div class="completion-head"><span data-ar="تقدّم تعبئة الاستمارة" data-fr="Progression du formulaire">تقدّم تعبئة الاستمارة</span><b dir="ltr" id="completionValue">0%</b></div><div aria-label="تقدّم تعبئة الحقول الإلزامية" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="completion-track" role="progressbar"><span></span></div></div>
+<div class="fields">
+<div class="field full"><label data-ar="الاسم الكامل *" data-fr="Nom complet *" for="fullname">الاسم الكامل *</label><input autocomplete="name" id="fullname" name="fullname" placeholder="الاسم الكامل" required maxlength="150" /></div>
+<div class="field full"><label data-ar="رقم الهاتف *" data-fr="Téléphone *" for="phone">رقم الهاتف *</label><input autocomplete="tel" id="phone" inputmode="tel" maxlength="20" name="phone" placeholder="06XXXXXXXX" required type="tel" /></div>
+<div class="field full"><label data-ar="المدينة *" data-fr="Ville *" for="city">المدينة *</label><input autocomplete="address-level2" id="city" name="city" placeholder="مثال: فاس" required maxlength="150" /></div>
+</div>
+<button class="location-btn" id="getLocation" type="button"><span data-ar="⌖ تحديد موقعي الحالي" data-fr="⌖ Détecter ma position actuelle">⌖ تحديد موقعي الحالي</span></button>
+<p class="location-status" id="locationStatus" aria-live="polite" data-ar="اختياري: اضغط للسماح للمتصفح بتحديد موقعك. لن يعمل ذلك إلا بعد موافقتك، وقد يطلب المتصفح تفعيل الموقع." data-fr="Facultatif : autorisez le navigateur à détecter votre position. Cela nécessite votre accord et l’activation de la localisation.">اختياري: اضغط للسماح للمتصفح بتحديد موقعك. لن يعمل ذلك إلا بعد موافقتك، وقد يطلب المتصفح تفعيل الموقع.</p>
+<input type="hidden" id="geoLocation" name="geoLocation" value="" />
+<p class="privacy-note" data-ar="تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. تحديد الموقع اختياري ولا يتم إلا بعد موافقتك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية." data-fr="Confidentialité : vos informations seront transmises à la base de données de ce projet indépendant pour le suivi de votre demande. La géolocalisation est facultative et ne sera utilisée qu’avec votre accord. Ne saisissez aucun mot de passe, donnée bancaire ou document d’identité. Cette page est indépendante et n’est le site officiel d’aucune institution financière.">تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. تحديد الموقع اختياري ولا يتم إلا بعد موافقتك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية.</p>
+<label class="checkline"><input id="consent" required type="checkbox"/><span data-ar="أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *" data-fr="J’accepte l’enregistrement de mes coordonnées et de ma ville pour répondre à ma demande. *">أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *</span></label>
+<div class="submit-row"><button class="submit-btn" type="submit"><span data-ar="إرسال المعلومات" data-fr="Envoyer mes informations">إرسال المعلومات</span> <span aria-hidden="true">→</span></button><span class="secure-note" data-ar="لن يتم إرسال موقعك إلا إذا وافقت على تحديده." data-fr="Votre position ne sera transmise que si vous autorisez sa détection.">لن يتم إرسال موقعك إلا إذا وافقت على تحديده.</span></div>
+<div aria-live="polite" class="status" id="formStatus" role="status"></div>
+</form>
+</div>
+</div>
+</section>
+<section class="section soft">
+<div class="container">
+<div class="section-head"><div class="kicker" data-ar="المراحل التالية" data-fr="LES PROCHAINES ÉTAPES">المراحل التالية</div><h2 data-ar="كيف تتابع طلبك؟" data-fr="Comment avancer ?">كيف تتابع طلبك؟</h2></div>
+<div class="steps">
+<article class="step"><div class="step-no" data-ar="الخطوة 01" data-fr="ÉTAPE 01">الخطوة 01</div><h3 data-ar="قدّم مشروعك" data-fr="Présentez votre projet">قدّم مشروعك</h3><p data-ar="أدخل بياناتك ومدينتك ومعلومات المحل المقترح." data-fr="Renseignez vos coordonnées, votre ville et les caractéristiques du local envisagé.">أدخل بياناتك ومدينتك ومعلومات المحل المقترح.</p></article>
+<article class="step"><div class="step-no" data-ar="الخطوة 02" data-fr="ÉTAPE 02">الخطوة 02</div><h3 data-ar="تحقّق من بياناتك" data-fr="Vérifiez vos informations">تحقّق من بياناتك</h3><p data-ar="راجع بيانات التواصل وتفاصيل المشروع قبل المتابعة." data-fr="Relisez vos coordonnées et les détails du projet avant de continuer.">راجع بيانات التواصل وتفاصيل المشروع قبل المتابعة.</p></article>
+<article class="step"><div class="step-no" data-ar="الخطوة 03" data-fr="ÉTAPE 03">الخطوة 03</div><h3 data-ar="انتظر دراسة الملف" data-fr="Attendez l'étude du dossier">انتظر دراسة الملف</h3><p data-ar="قد تتواصل معك المشروع المستقل إذا كان مشروعك مناسبًا لاحتياجاتها ومعاييرها." data-fr="Projet indépendant pourra vous contacter si votre projet correspond à ses besoins et à ses critères.">قد تتواصل معك المشروع المستقل إذا كان مشروعك مناسبًا لاحتياجاتها ومعاييرها.</p></article>
+</div>
+</div>
+</section>
+<section class="section faq-section"><div class="container faq-layout"><div><div class="kicker" data-ar="إجابات واضحة" data-fr="DES RÉPONSES CLAIRES">إجابات واضحة</div><h2 data-ar="كل ما تحتاج إليه&lt;br&gt;قبل الخطوة الأولى." data-fr="Tout comprendre&lt;br&gt;avant de commencer.">كل ما تحتاج إليه<br/>قبل الخطوة الأولى.</h2><p class="faq-intro" data-ar="معلومات مختصرة تساعدك على إعداد طلب واضح ومتكامل." data-fr="Quelques précisions pour préparer une demande claire et complète.">معلومات مختصرة تساعدك على إعداد طلب واضح ومتكامل.</p></div><div class="faq-list"><details><summary data-ar="هل أحتاج إلى محل قبل تقديم الطلب؟" data-fr="Faut-il déjà disposer d’un local ?">هل أحتاج إلى محل قبل تقديم الطلب؟</summary><p data-ar="يمكنك توضيح أنك تبحث عن محل، مع تحديد المدينة والحي اللذين تفكّر فيهما." data-fr="Vous pouvez indiquer que vous recherchez un local et préciser la ville et le quartier envisagés.">يمكنك توضيح أنك تبحث عن محل، مع تحديد المدينة والحي اللذين تفكّر فيهما.</p></details><details><summary data-ar="هل يُعد إرسال الطلب موافقة على المشروع؟" data-fr="L’envoi garantit-il l’acceptation du projet ?">هل يُعد إرسال الطلب موافقة على المشروع؟</summary><p data-ar="إرسال الطلب خطوة أولى للتواصل. يتوقف قبول المشروع على دراسة الملف واستيفاء الشروط المعتمدة لدى الجهة المعنية." data-fr="L’envoi constitue une première prise de contact. L’acceptation dépend de l’étude du dossier et des conditions applicables.">إرسال الطلب خطوة أولى للتواصل. يتوقف قبول المشروع على دراسة الملف واستيفاء الشروط المعتمدة لدى الجهة المعنية.</p></details></div></div></section></main>
+<footer>
+<div class="container footer-inner">
+<span class="brand-name" aria-label="مشروع مستقل">مشروع مستقل</span>
+<div class="footer-text" data-ar="صفحة مستقلة لإعداد طلب التواصل، غير تابعة لالمشروع المستقل. إرسال الرسالة لا يضمن قبول المشروع." data-fr="Page indépendante de préparation de demande, non affiliée à Projet indépendant. L’envoi du message ne garantit pas l’acceptation du projet.">صفحة مستقلة لإعداد طلب التواصل، غير تابعة لالمشروع المستقل. إرسال الرسالة لا يضمن قبول المشروع.</div>
+<div class="footer-copy">© <span id="year"></span> · <span data-ar="جميع الحقوق محفوظة" data-fr="Tous droits réservés">جميع الحقوق محفوظة</span></div>
+</div>
+</footer>
+<button aria-label="العودة إلى أعلى الصفحة" class="back-top" title="العودة إلى أعلى الصفحة" type="button">↑</button>
+<script>
+    const translations = document.querySelectorAll("[data-fr][data-ar]");
+    const langButton = document.getElementById("languageToggle");
+    let currentLang = "ar";
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.querySelector('.brand').setAttribute('aria-label', lang === 'ar' ? 'الصفحة الرئيسية' : 'Accueil');
+      document.querySelector('.visual-card').setAttribute('aria-label', lang === 'ar' ? 'مراحل إعداد ملف المشروع' : 'Étapes de préparation du dossier');
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      statusBox?.classList.remove("success", "error");
+      translations.forEach(el => {
+        el.innerHTML = el.dataset[lang];
+      });
+      document.querySelectorAll("option[data-fr][data-ar]").forEach(option => {
+        option.textContent = option.dataset[lang];
+      });
+      document.querySelectorAll("[data-placeholder-fr][data-placeholder-ar]").forEach(field => {
+        field.placeholder = field.dataset["placeholder" + (lang === "fr" ? "Fr" : "Ar")];
+      });
+      document.querySelectorAll("#agencyForm input:not([type=tel]):not([type=email]):not([type=number]), #agencyForm textarea").forEach(field => {
+        field.dir = lang === "ar" ? "rtl" : "ltr";
+        field.style.textAlign = lang === "ar" ? "right" : "left";
+      });
+      document.querySelectorAll("#agencyForm select").forEach(field => {
+        field.dir = lang === "ar" ? "rtl" : "ltr";
+        field.style.textAlign = lang === "ar" ? "right" : "left";
+      });
+      langButton.textContent = lang === "fr" ? "العربية" : "Français";
+      langButton.setAttribute("aria-label", lang === "fr" ? "Passer en arabe" : "Passer en français");
+      document.title = lang === "fr"
+        ? "Projet d'agence Projet indépendant | Demande de partenariat"
+        : "مشروع تجاري مستقل | طلب دراسة";
+    }
+
+    langButton.addEventListener("click", () => {
+      setLanguage(currentLang === "fr" ? "ar" : "fr");
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const form = document.getElementById("agencyForm");
+    const statusBox = document.getElementById("formStatus");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+      if (form.dataset.sending === "true") return;
+      statusBox.className = "status";
+      const requiredFields = ["fullname", "phone", "city"];
+      let valid = true;
+      requiredFields.forEach(id => {
+        const field = document.getElementById(id);
+        if (!field.value.trim()) { field.style.borderColor = "#c62828"; valid = false; }
+        else { field.style.borderColor = ""; }
+      });
+
+      const phone = document.getElementById("phone");
+      const phoneClean = phone.value.replace(/[^\d+]/g, "");
+      if (!/^(?:0[5-7]\d{8}|(?:\+212|00212)[5-7]\d{8})$/.test(phoneClean)) {
+        phone.style.borderColor = "#c62828";
+        valid = false;
+      }
+
+      if (!form.checkValidity()) valid = false;
+      if (!valid) {
+        const firstInvalid = Array.from(form.elements).find(el => el.willValidate && !el.checkValidity());
+        if (firstInvalid) firstInvalid.focus();
+        else phone.focus();
+      }
+
+      if (!valid) {
+        statusBox.textContent = currentLang === "fr"
+          ? "Vérifiez le nom, le téléphone marocain, la ville et votre consentement."
+          : "يرجى التحقق من الاسم الكامل ورقم الهاتف المغربي والمدينة والموافقة على استخدام البيانات.";
+        statusBox.classList.add("error");
+        statusBox.scrollIntoView({behavior:"smooth", block:"nearest"});
+        return;
+      }
+
+      const submittedLang = currentLang;
+      const submitButton = form.querySelector('[type="submit"]');
+      const submitText = submitButton.querySelector('span');
+      const readValue = id => document.getElementById(id).value.trim();
+      const geo = readValue('geoLocation');
+      // Send only columns used by this version of the Supabase table.
+      // This avoids PostgREST errors caused by sending unknown column names.
+      const payload = {
+        fullname: readValue('fullname'),
+        phone: phoneClean,
+        city: readValue('city'),
+        address: geo || null,
+        consent: document.getElementById('consent').checked,
+        language: submittedLang
+      };
+      form.dataset.sending = 'true';
+      submitButton.disabled = true;
+      langButton.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      submitText.textContent = submittedLang === 'ar' ? 'جارٍ إرسال الطلب…' : 'Envoi en cours…';
+      try {
+        // Supabase endpoint retained from the supplied source. Confirm ownership, enable RLS, and restrict INSERT permissions.
+        const response = await fetch('https://gzfvpdaubsmgvlndzlee.supabase.co/rest/v1/agency_requests', {
+          method: 'POST',
+          headers: {
+            'apikey': 'sb_publishable_PDMOMjwf_tVB8hAz5-i7iA_2GDcZWUb',
+            'Content-Type': 'application/json',
+            'Prefer': 'return=minimal'
+          },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) {
+          let details = '';
+          try {
+            const errorData = await response.json();
+            details = errorData.message || errorData.details || errorData.hint || '';
+          } catch (_) {}
+          throw new Error(details || ('Supabase HTTP ' + response.status));
+        }
+        // return=minimal may return 201 (Created); accept any successful 2xx response.
+        // No personal information is placed in the redirect URL.
+        window.location.assign('tankupage.html?lang=' + encodeURIComponent(submittedLang));
+      } catch (error) {
+        console.error('Supabase submission error:', error);
+        statusBox.className = 'status error';
+        statusBox.textContent = submittedLang === 'ar'
+          ? 'لم يتم حفظ الطلب. قد تكون قاعدة البيانات أو صلاحيات الإرسال غير مهيأة بشكل صحيح. حاول لاحقًا، وإذا تكرر الخطأ راجع إعدادات Supabase.'
+          : 'La demande n’a pas été enregistrée. La base de données ou les autorisations d’envoi ne sont peut-être pas correctement configurées. Réessayez plus tard ou vérifiez Supabase.';
+        statusBox.scrollIntoView({behavior:'smooth', block:'nearest'});
+      } finally {
+        form.dataset.sending = 'false';
+        submitButton.disabled = false;
+        langButton.disabled = false;
+        form.removeAttribute('aria-busy');
+        submitText.textContent = currentLang === 'ar' ? 'إرسال طلبي' : 'Envoyer ma demande';
+      }
+
+    });
+
+    const startApplication = document.getElementById('startApplication');
+    const backToWelcome = document.getElementById('backToWelcome');
+    function showPage(page) {
+      document.body.dataset.page = page;
+      window.scrollTo({top: 0, behavior: 'smooth'});
+      if (page === 'form') document.getElementById('fullname').focus({preventScroll:true});
+    }
+    startApplication.addEventListener('click', () => showPage('form'));
+    backToWelcome.addEventListener('click', () => showPage('welcome'));
+
+    const getLocationButton = document.getElementById('getLocation');
+    const locationStatus = document.getElementById('locationStatus');
+    getLocationButton.addEventListener('click', () => {
+      if (!('geolocation' in navigator)) {
+        locationStatus.textContent = currentLang === 'ar' ? 'المتصفح لا يدعم تحديد الموقع.' : 'La géolocalisation n’est pas prise en charge.';
+        return;
+      }
+      getLocationButton.disabled = true;
+      locationStatus.textContent = currentLang === 'ar' ? 'جارٍ طلب إذن تحديد الموقع…' : 'Demande d’autorisation de localisation…';
+      navigator.geolocation.getCurrentPosition(position => {
+        const lat = position.coords.latitude.toFixed(6);
+        const lon = position.coords.longitude.toFixed(6);
+        document.getElementById('geoLocation').value = `GPS: ${lat}, ${lon}`;
+        locationStatus.textContent = currentLang === 'ar' ? `تم تحديد الموقع بنجاح. الإحداثيات: ${lat}, ${lon}` : `Position détectée : ${lat}, ${lon}`;
+        getLocationButton.disabled = false;
+      }, error => {
+        const messages = currentLang === 'ar'
+          ? {1:'لم تسمح بالوصول إلى الموقع. يمكنك متابعة الاستمارة دون تحديده.',2:'تعذر تحديد الموقع حاليًا. تحقق من إعدادات GPS.',3:'انتهت مهلة تحديد الموقع. حاول مرة أخرى.'}
+          : {1:'Autorisation refusée. Vous pouvez continuer sans géolocalisation.',2:'Position indisponible. Vérifiez les réglages GPS.',3:'Délai dépassé. Réessayez.'};
+        locationStatus.textContent = messages[error.code] || messages[2];
+        getLocationButton.disabled = false;
+      }, {enableHighAccuracy:true, timeout:15000, maximumAge:60000});
+    });
+
+    setLanguage("ar");
+  
+
+(() => {
+ const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+ const targets = document.querySelectorAll('.section-head, .benefit, .form-aside, form, .step, .faq-layout > div');
+ if ('IntersectionObserver' in window && !reduceMotion.matches) {
+  document.body.classList.add('motion-ready');
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+   if (entry.isIntersecting) {entry.target.classList.add('visible'); observer.unobserve(entry.target);}
+  }), {threshold:.08});
+  targets.forEach((el, i) => {el.classList.add('reveal'); el.style.setProperty('--delay', (el.matches('.benefit,.step') ? i % 3 * 90 : 0) + 'ms'); observer.observe(el);});
+ }
+ const topButton = document.querySelector('.back-top');
+ const readingBar = document.querySelector('.reading-progress span');
+ let queued = false;
+ function updateScroll() {
+  const total = document.documentElement.scrollHeight - innerHeight;
+  readingBar.style.transform = 'scaleX(' + (total > 0 ? Math.min(1, scrollY / total) : 0) + ')';
+  document.body.classList.toggle('is-scrolled', scrollY > 20);
+  topButton.classList.toggle('shown', scrollY > 650); queued = false;
+ }
+ addEventListener('scroll', () => {if (!queued) {queued=true; requestAnimationFrame(updateScroll);}}, {passive:true});
+ addEventListener('resize', updateScroll);updateScroll();
+ topButton.addEventListener('click', () => window.scrollTo({top:0, behavior:reduceMotion.matches ? 'instant' : 'smooth'}));
+ const required = [...form.querySelectorAll('[required]')];
+ function updateCompletion() {
+  const complete = required.filter(el => el.type === 'checkbox' ? el.checked : el.value.trim() && el.checkValidity()).length;
+  const percentage = Math.round(complete / required.length * 100);
+  document.querySelector('#completionValue').textContent=percentage+'%';
+  document.querySelector('.completion-track span').style.width=percentage+'%';
+  document.querySelector('.completion-track').setAttribute('aria-valuenow',percentage);
+ }
+ form.addEventListener('input',e=>{e.target.style.borderColor='';updateCompletion();});
+ form.addEventListener('change',updateCompletion);updateCompletion();
+ langButton.addEventListener('click',()=>{
+  topButton.setAttribute('aria-label',currentLang==='ar'?'العودة إلى أعلى الصفحة':'Retour en haut');
+  topButton.title=topButton.getAttribute('aria-label');
+  document.querySelector('.completion-track').setAttribute('aria-label',currentLang==='ar'?'تقدّم تعبئة الحقول الإلزامية':'Progression des champs obligatoires');
+ });
+})();
+
+</script>
+</body>
+</html>
