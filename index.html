@@ -282,11 +282,6 @@ header{transition:box-shadow .4s,background .4s}.is-scrolled header{box-shadow:0
 
 .submit-btn:disabled{opacity:.65;cursor:wait;transform:none;box-shadow:none}
 
-/* Header logo beside One WorLd. */
-.brand{flex-wrap:wrap;gap:10px}
-.brand-logo-frame{display:inline-flex;align-items:center;justify-content:center;flex:none;background:#000;border:1px solid #333;border-radius:10px;padding:10px 12px}
-.brand .brand-logo-frame img{display:block;width:165px;max-width:100%;height:auto;background:transparent;padding:0;border-radius:0;box-shadow:none;object-fit:contain}
-@media(max-width:600px){.nav{height:auto;min-height:76px;padding-block:12px}.brand{gap:7px}.brand .brand-name{font-size:15px;padding:7px 8px}.brand-logo-frame{padding:8px}.brand .brand-logo-frame img{width:110px}}
 </style>
 <link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><style>
 /* Arabic and French typography */
@@ -309,25 +304,174 @@ label{font-size:14px;font-weight:700}input,select,textarea{font-size:16px;line-h
 .brand,.brand-caption{font-family:inherit}.thank h1{font-size:clamp(32px,5vw,48px);line-height:1.55}.thank p{font-size:18px;line-height:2}.thank .kicker{font-size:14px}.thank .brand{font-family:var(--font-fr);font-size:11px;letter-spacing:.12em}
 html[lang=fr] .hero-copy{font-size:16px}html[lang=fr] .section-head p{font-size:15px}html[lang=fr] .benefit p,html[lang=fr] .step p{font-size:14px}
 @media(max-width:600px){html[lang=ar] h1{font-size:40px;line-height:1.4}.hero-copy{font-size:16px}.section-head p{font-size:15px}.visual-title{font-size:25px}.form-title h3{font-size:24px}.faq-list summary{font-size:16px}.hero-points{font-size:11px}.thank p{font-size:16px}}
-.brand-name{display:inline-flex;align-items:center;font-weight:900;font-size:20px;color:#26351f;padding:10px 14px;border:1px solid #dfe5d8;border-radius:12px;background:#f7f8f2;white-space:nowrap}footer .brand-name{color:#fff;border-color:#4b5543;background:#20271d}@media(max-width:600px){.brand-name{font-size:17px;padding:8px 10px}}\n.privacy-note{font-size:12px;line-height:1.9;color:#59634f;background:#f4f6ef;border:1px solid #dfe6d6;border-radius:10px;padding:12px;margin:18px 0}\n
-/* Two-step welcome and application flow */
-body[data-page="welcome"] #formulaire{display:none}
-body[data-page="welcome"] #approach,body[data-page="welcome"] .steps,body[data-page="welcome"] .faq-section{display:none}
-body[data-page="form"] .hero,body[data-page="form"] #approach,body[data-page="form"] .steps,body[data-page="form"] .faq-section{display:none}
-body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);padding-top:45px}
+.brand-name{display:inline-flex;align-items:center;font-weight:900;font-size:20px;color:#26351f;padding:10px 14px;border:1px solid #dfe5d8;border-radius:12px;background:#f7f8f2;white-space:nowrap}footer .brand-name{color:#fff;border-color:#4b5543;background:#20271d}@media(max-width:600px){.brand-name{font-size:17px;padding:8px 10px}}
+.privacy-note{font-size:12px;line-height:1.9;color:#59634f;background:#f4f6ef;border:1px solid #dfe6d6;border-radius:10px;padding:12px;margin:18px 0}\n
 .page-step{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 22px;padding:12px 16px;border:1px solid #e4e8dc;border-radius:14px;background:#f8f9f4;color:#46523d;font-size:13px}
-.page-step button,.location-btn,.back-welcome{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
+.page-step button,.back-welcome{border:0;border-radius:11px;padding:12px 16px;font:inherit;font-weight:700;cursor:pointer}
 .page-step button,.back-welcome{background:#e9eddf;color:#35422d}
-.location-btn{width:100%;background:#26351f;color:#fff;min-height:50px;margin-top:10px}
-.location-status{font-size:13px;line-height:1.8;margin-top:9px;color:#59634f}
 @media(max-width:600px){.page-step{align-items:stretch;flex-direction:column}.page-step button{width:100%}}
-</style></head>
-<body data-page="welcome"><div aria-hidden="true" class="reading-progress"><span></span></div><a class="skip-link" data-ar="الانتقال إلى الاستمارة" data-fr="Aller au formulaire" href="#formulaire">الانتقال إلى الاستمارة</a>
+/* Header wordmarks and desktop layout */
+.brand-lockup{display:inline-flex;align-items:center;gap:8px;flex:none}
+.brand-lockup .brand-name{font-family:var(--font-fr);font-size:16px;font-weight:700;line-height:1.25;padding:10px 13px}
+.brand-caption{white-space:nowrap}
+@media (max-width:600px){
+  .brand-lockup{gap:6px}
+  .brand-lockup .brand-name{font-size:13px;padding:8px}
+}
+@media (min-width:901px){
+  .container{width:min(1280px,calc(100% - clamp(56px,7vw,120px)))}
+  .nav{height:82px}
+  .hero{min-height:0;padding:clamp(54px,7vh,82px) 0}
+  .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(36px,6vw,92px)}
+  html[lang=ar] .hero h1{font-size:clamp(42px,4.2vw,64px)}
+  .hero-grid .visual-card{max-width:460px;justify-self:center}
+  .section{padding-block:76px}
+  .form-layout{grid-template-columns:minmax(0,.75fr) minmax(0,1.55fr);gap:clamp(30px,4vw,56px)}
+  .fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+<style>
+/* Landing page palette and layout */
+:root {
+  --black: #151410;
+  --ink: #201d15;
+  --yellow: #f9d84c;
+  --paper: #fffdf4;
+  --soft: #faf4df;
+  --line: #e7debd;
+  --muted: #625947;
+  --shadow: 0 18px 55px #37290510;
+}
+html { scroll-padding-top: 105px; }
+body { background: var(--paper); }
+.container { width: min(1190px, calc(100% - 56px)); }
+header, .is-scrolled header { background: #fffdf5f7; border-color: var(--line); }
+.nav { height: 74px; }
+.nav-link { color: var(--ink); border-color: transparent; }
+.nav-link:hover { border-color: #a28215; }
+.brand-lockup .brand-name:first-child { background: var(--yellow); border-color: var(--yellow); }
+.brand-name, .lang-switch { color: var(--ink); background: #fff8db; border-color: var(--line); }
+.brand-caption { color: var(--muted); border-color: var(--line); }
+
+.hero {
+  display: grid;
+  align-items: center;
+  min-height: calc(100svh - 74px);
+  padding-block: clamp(64px, 10vh, 128px);
+  background: radial-gradient(ellipse at 78% 16%, #3b2e13 0, transparent 56%), var(--black);
+  border-bottom: 5px solid var(--yellow);
+}
+.hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(38px, 7vw, 100px); }
+.hero-grid-lines { background-size: 54px 54px; }
+.ambient i { background: #f9d84c18; }
+.hero::before, .hero::after, .ambient i { animation: none; }
+html[lang=ar] .hero h1 { font-size: clamp(45px, 5vw, 76px); line-height: 1.25; margin-block: 18px 22px; }
+html[lang=fr] .hero h1 { font-size: clamp(42px, 4.8vw, 70px); }
+.hero-copy, .hero-points { color: #e0d9c4; }
+.primary-btn, .submit-btn {
+  min-height: 54px;
+  background: var(--yellow);
+  color: var(--black);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #b5851b24;
+}
+.primary-btn:hover, .submit-btn:hover { background: #ffea92; color: var(--black); }
+.primary-btn span[aria-hidden] { display: inline-block; transform: rotate(90deg); }
+[dir=rtl] .primary-btn span[aria-hidden] { transform: rotate(90deg); }
+.visual-card, [dir=rtl] .visual-card {
+  justify-self: stretch;
+  max-width: 100%;
+  padding: clamp(24px, 3.5vw, 38px);
+  background: var(--paper);
+  border: 1px solid #fff5cc;
+  border-radius: 26px;
+  box-shadow: 10px 12px 0 #f9d84c27, 0 28px 65px #0005;
+}
+.visual-head { gap: 8px; flex-wrap: wrap; }
+.visual-head, .visual-row { border-color: var(--line); }
+.visual-label, .visual-icon { background: #fae79c; color: var(--ink); }
+.visual-label::before { background: #6f540f; box-shadow: none; }
+.visual-row:hover { background: #fff5d5; }
+.visual-sub, .visual-row small, .visual-bottom, .visual-bottom strong { color: var(--muted); }
+
+.section { padding-block: clamp(54px, 8vw, 98px); }
+#formulaire { background: var(--soft); }
+#formulaire > .container { max-width: 1050px; }
+.form-layout { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 26px; }
+.form-layout > div { min-width: 0; }
+.page-step, .completion, .privacy-note {
+  color: var(--muted);
+  background: #fff7d9;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.page-step { margin-bottom: 12px; }
+.page-step button { background: #f8e9ac; color: var(--ink); }
+form {
+  background: var(--paper);
+  border-color: var(--line);
+  border-top: 4px solid var(--yellow);
+  border-radius: 24px;
+  padding: clamp(20px, 4vw, 38px);
+}
+.required-note, .secure-note, .completion-head, .completion-head b { color: var(--muted); }
+.completion-track { background: #eadfb8; }
+.completion-track span { background: #a68014; }
+.fields { gap: 16px; }
+input, select, textarea { background: #fffaf0; border-color: #d8cda9; }
+input::placeholder, textarea::placeholder { color: #726856; }
+.privacy-note { padding: 12px 14px; font-size: 13px; }
+.form-aside {
+  background: var(--black);
+  border: 1px solid var(--black);
+  color: var(--paper);
+  position: static;
+}
+.form-aside .eyebrow { color: var(--yellow); }
+.form-aside .eyebrow::before { background: var(--yellow); }
+.form-aside p, .aside-list li, .contact-mini { color: #e5dcc3; }
+.contact-mini { border-color: #5a4d2c; }
+#approach { background: var(--paper); }
+.benefit, .step { background: #fffdf6; border: 1px solid var(--line); border-radius: 20px; }
+.step { border-top: 3px solid var(--yellow); }
+.benefit-icon { background: #fae79c; }
+.benefit p, .step p, .faq-intro, .faq-list details p { color: var(--muted); }
+.faq-section, .faq-list details { border-color: var(--line); }
+.faq-list details { background: #fffbec; border: 1px solid var(--line); border-radius: 14px; padding: 15px 18px; margin-bottom: 12px; }
+footer { background: var(--black); border-top: 4px solid var(--yellow); }
+footer .brand-name { background: #2b2415; color: var(--paper); border-color: #675731; }
+.footer-text, .footer-copy { color: #e0d9c4; }
+.back-top { color: var(--ink); background: var(--yellow); border-color: var(--line); }
+:focus-visible { outline: 2px solid #a17a11; outline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .hero { min-height: auto; padding-block: 64px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+  .hero-grid .visual-card { max-width: 580px; }
+  .form-layout { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  html { scroll-padding-top: 82px; }
+  .container { width: calc(100% - 32px); }
+  .nav { height: 66px; gap: 8px; }
+  .brand-lockup { gap: 4px; }
+  .brand-lockup .brand-name, .lang-switch { padding: 8px; }
+  .hero { padding-block: 46px 52px; }
+  html[lang=ar] .hero h1, html[lang=fr] .hero h1 { font-size: clamp(34px, 8.6vw, 49px); }
+  .visual-card, [dir=rtl] .visual-card { padding: 20px; box-shadow: 5px 7px 0 #f9d84c27; }
+  .form-title { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .submit-btn { width: 100%; min-width: 0; }
+}
+</style>
+</head>
+<body><div aria-hidden="true" class="reading-progress"><span></span></div><a class="skip-link" data-ar="الانتقال إلى الاستمارة" data-fr="Aller au formulaire" href="#formulaire">الانتقال إلى الاستمارة</a>
 <header>
 <div class="container nav">
 <a aria-label="الصفحة الرئيسية" class="brand" href="#accueil">
-<span class="brand-name" dir="ltr">One WorLd</span>
-<span class="brand-logo-frame"><img src="data:image/webp;base64,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" alt="Wafacash" width="165" height="46"/></span>
+<span class="brand-lockup" dir="ltr">
+<span class="brand-name" lang="fr">wafaacach</span>
+<span class="brand-name" lang="en">One World</span>
+</span>
 <span class="brand-caption" data-ar="مشروع وكالة&lt;br&gt;طلب شراكة" data-fr="Projet d'agence&lt;br&gt;Demande de partenariat">مشروع وكالة<br/>طلب شراكة</span>
 </a>
 <div class="nav-actions"><a class="nav-link" data-ar="عن المشروع" data-fr="Le projet" href="#approach">عن المشروع</a>
@@ -337,7 +481,7 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
 </div>
 </header>
 <main>
-<section class="hero" id="accueil"><div aria-hidden="true" class="ambient"><i></i><i></i><i></i></div><div aria-hidden="true" class="hero-grid-lines"></div>
+<section class="hero" id="accueil" tabindex="-1"><div aria-hidden="true" class="ambient"><i></i><i></i><i></i></div><div aria-hidden="true" class="hero-grid-lines"></div>
 <div class="container hero-grid">
 <div>
 <div class="eyebrow" data-ar="حوّل مشروعك إلى واقع" data-fr="DONNEZ VIE À VOTRE PROJET">حوّل مشروعك إلى واقع</div>
@@ -364,21 +508,7 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
 </div>
 </div>
 </section>
-<section class="section soft" id="approach">
-<div class="container">
-<div class="section-head">
-<div class="kicker" data-ar="خطّط لانطلاقة مدروسة" data-fr="PRÉPAREZ VOTRE LANCEMENT">خطّط لانطلاقة مدروسة</div>
-<h2 data-ar="أسّس مشروعك على رؤية واضحة" data-fr="Donnez une base solide à votre projet">أسّس مشروعك على رؤية واضحة</h2>
-<p data-ar="ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك." data-fr="Définissez les besoins de votre projet : les services envisagés, les compétences nécessaires et un emplacement adapté à votre clientèle.">ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك.</p>
-</div>
-<div class="benefits">
-<article class="benefit"><div class="benefit-icon">↗</div><h3 data-ar="خدمات قريبة من العملاء" data-fr="Des services de proximité">خدمات قريبة من العملاء</h3><p data-ar="حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك." data-fr="Identifiez les besoins du quartier et les services que vous souhaitez proposer.">حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك.</p></article>
-<article class="benefit"><div class="benefit-icon">◎</div><h3 data-ar="التكوين والاستعداد" data-fr="Formation et préparation">التكوين والاستعداد</h3><p data-ar="حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع." data-fr="Précisez vos besoins en formation et en gestion, puis renseignez-vous sur les conditions d’accompagnement.">حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع.</p></article>
-<article class="benefit"><div class="benefit-icon">⌖</div><h3 data-ar="اختيار الموقع المناسب" data-fr="Un emplacement adapté">اختيار الموقع المناسب</h3><p data-ar="وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك." data-fr="Précisez la situation du local, sa superficie et son accessibilité pour présenter clairement votre projet.">وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك.</p></article>
-</div>
-</div>
-</section>
-<section class="section" id="formulaire">
+<section class="section" id="formulaire" tabindex="-1">
 <div class="container">
 <div class="section-head">
 <div class="kicker" data-ar="طلب الترشيح" data-fr="CANDIDATURE">طلب الترشيح</div>
@@ -386,6 +516,21 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
 <p data-ar="أدخل معلوماتك وبيانات مشروعك، ثم تابع إلى الخطوة التالية." data-fr="Renseignez vos coordonnées et les informations de votre projet, puis passez à l’étape suivante.">أدخل معلوماتك وبيانات مشروعك، ثم تابع إلى الخطوة التالية.</p>
 </div>
 <div class="form-layout">
+<div class="page-step"><span data-ar="الخطوة 2 من 2 — المعلومات المطلوبة" data-fr="Étape 2 sur 2 — Vos informations">الخطوة 2 من 2 — المعلومات المطلوبة</span><button type="button" id="backToWelcome" data-ar="العودة إلى الترحيب" data-fr="Retour à l’accueil">العودة إلى الترحيب</button></div>
+<form id="agencyForm" novalidate="">
+<div class="form-title"><h3 data-ar="معلومات التواصل والموقع" data-fr="Coordonnées et localisation">معلومات التواصل والموقع</h3><span class="required-note" data-ar="* حقول إلزامية" data-fr="* Champs obligatoires">* حقول إلزامية</span></div>
+<div class="completion"><div class="completion-head"><span data-ar="تقدّم تعبئة الاستمارة" data-fr="Progression du formulaire">تقدّم تعبئة الاستمارة</span><b dir="ltr" id="completionValue">0%</b></div><div aria-label="تقدّم تعبئة الحقول الإلزامية" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="completion-track" role="progressbar"><span></span></div></div>
+<div class="fields">
+<div class="field full"><label data-ar="الاسم الكامل *" data-fr="Nom complet *" for="fullname">الاسم الكامل *</label><input autocomplete="name" id="fullname" name="fullname" placeholder="الاسم الكامل" required maxlength="150" /></div>
+<div class="field full"><label data-ar="رقم الهاتف *" data-fr="Téléphone *" for="phone">رقم الهاتف *</label><input autocomplete="tel" id="phone" inputmode="tel" maxlength="20" name="phone" placeholder="06XXXXXXXX" required type="tel" /></div>
+<div class="field full"><label data-ar="المدينة *" data-fr="Ville *" for="city">المدينة *</label><input autocomplete="address-level2" id="city" name="city" placeholder="مثال: فاس" required maxlength="150" /></div>
+</div>
+<p class="privacy-note" data-ar="تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية." data-fr="Confidentialité : vos informations seront transmises à la base de données de ce projet indépendant pour le suivi de votre demande. Ne saisissez aucun mot de passe, donnée bancaire ou document d’identité. Cette page est indépendante et n’est le site officiel d’aucune institution financière.">تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية.</p>
+<label class="checkline"><input id="consent" required type="checkbox"/><span data-ar="أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *" data-fr="J’accepte l’enregistrement de mes coordonnées et de ma ville pour répondre à ma demande. *">أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *</span></label>
+<div class="submit-row"><button class="submit-btn" type="submit"><span data-ar="إرسال المعلومات" data-fr="Envoyer mes informations">إرسال المعلومات</span> <span aria-hidden="true">→</span></button><span class="secure-note" data-ar="لن يتم إرسال موقعك إلا إذا وافقت على تحديده." data-fr="Votre position ne sera transmise que si vous autorisez sa détection.">لن يتم إرسال موقعك إلا إذا وافقت على تحديده.</span></div>
+<div aria-live="polite" class="status" id="formStatus" role="status"></div>
+</form>
+</div>
 <aside class="form-aside">
 <div class="eyebrow" data-ar="قبل البدء" data-fr="AVANT DE COMMENCER">قبل البدء</div>
 <h3 data-ar="ملف واضح يبدأ بمعلومات دقيقة." data-fr="Un dossier clair commence par de bonnes informations.">ملف واضح يبدأ بمعلومات دقيقة.</h3>
@@ -397,23 +542,19 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
 </ul>
 <div class="contact-mini"><span data-ar="للاستفسارات، استخدم بيانات التواصل التي يعلنها صاحب هذا المشروع بشكل مستقل." data-fr="Pour toute question, utilisez les coordonnées publiées par le responsable de ce projet indépendant.">للاستفسارات، استخدم بيانات التواصل التي يعلنها صاحب هذا المشروع بشكل مستقل.</span></div>
 </aside>
-<div class="page-step"><span data-ar="الخطوة 2 من 2 — المعلومات المطلوبة" data-fr="Étape 2 sur 2 — Vos informations">الخطوة 2 من 2 — المعلومات المطلوبة</span><button type="button" id="backToWelcome" data-ar="العودة إلى الترحيب" data-fr="Retour à l’accueil">العودة إلى الترحيب</button></div>
-<form id="agencyForm" novalidate="">
-<div class="form-title"><h3 data-ar="معلومات التواصل والموقع" data-fr="Coordonnées et localisation">معلومات التواصل والموقع</h3><span class="required-note" data-ar="* حقول إلزامية" data-fr="* Champs obligatoires">* حقول إلزامية</span></div>
-<div class="completion"><div class="completion-head"><span data-ar="تقدّم تعبئة الاستمارة" data-fr="Progression du formulaire">تقدّم تعبئة الاستمارة</span><b dir="ltr" id="completionValue">0%</b></div><div aria-label="تقدّم تعبئة الحقول الإلزامية" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="completion-track" role="progressbar"><span></span></div></div>
-<div class="fields">
-<div class="field full"><label data-ar="الاسم الكامل *" data-fr="Nom complet *" for="fullname">الاسم الكامل *</label><input autocomplete="name" id="fullname" name="fullname" placeholder="الاسم الكامل" required maxlength="150" /></div>
-<div class="field full"><label data-ar="رقم الهاتف *" data-fr="Téléphone *" for="phone">رقم الهاتف *</label><input autocomplete="tel" id="phone" inputmode="tel" maxlength="20" name="phone" placeholder="06XXXXXXXX" required type="tel" /></div>
-<div class="field full"><label data-ar="المدينة *" data-fr="Ville *" for="city">المدينة *</label><input autocomplete="address-level2" id="city" name="city" placeholder="مثال: فاس" required maxlength="150" /></div>
 </div>
-<button class="location-btn" id="getLocation" type="button"><span data-ar="⌖ تحديد موقعي الحالي" data-fr="⌖ Détecter ma position actuelle">⌖ تحديد موقعي الحالي</span></button>
-<p class="location-status" id="locationStatus" aria-live="polite" data-ar="اختياري: اضغط للسماح للمتصفح بتحديد موقعك. لن يعمل ذلك إلا بعد موافقتك، وقد يطلب المتصفح تفعيل الموقع." data-fr="Facultatif : autorisez le navigateur à détecter votre position. Cela nécessite votre accord et l’activation de la localisation.">اختياري: اضغط للسماح للمتصفح بتحديد موقعك. لن يعمل ذلك إلا بعد موافقتك، وقد يطلب المتصفح تفعيل الموقع.</p>
-<input type="hidden" id="geoLocation" name="geoLocation" value="" />
-<p class="privacy-note" data-ar="تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. تحديد الموقع اختياري ولا يتم إلا بعد موافقتك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية." data-fr="Confidentialité : vos informations seront transmises à la base de données de ce projet indépendant pour le suivi de votre demande. La géolocalisation est facultative et ne sera utilisée qu’avec votre accord. Ne saisissez aucun mot de passe, donnée bancaire ou document d’identité. Cette page est indépendante et n’est le site officiel d’aucune institution financière.">تنبيه الخصوصية: عند الإرسال ستُنقل المعلومات التي أدخلتها إلى قاعدة بيانات هذا المشروع المستقل للتواصل بشأن طلبك. تحديد الموقع اختياري ولا يتم إلا بعد موافقتك. لا تُدخل كلمات مرور أو بيانات بنكية أو وثائق هوية. هذه الصفحة مشروع مستقل وليست الموقع الرسمي لأي مؤسسة مالية.</p>
-<label class="checkline"><input id="consent" required type="checkbox"/><span data-ar="أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *" data-fr="J’accepte l’enregistrement de mes coordonnées et de ma ville pour répondre à ma demande. *">أوافق على حفظ بيانات التواصل والمدينة التي أدخلتها واستخدامها للرد على طلبي. *</span></label>
-<div class="submit-row"><button class="submit-btn" type="submit"><span data-ar="إرسال المعلومات" data-fr="Envoyer mes informations">إرسال المعلومات</span> <span aria-hidden="true">→</span></button><span class="secure-note" data-ar="لن يتم إرسال موقعك إلا إذا وافقت على تحديده." data-fr="Votre position ne sera transmise que si vous autorisez sa détection.">لن يتم إرسال موقعك إلا إذا وافقت على تحديده.</span></div>
-<div aria-live="polite" class="status" id="formStatus" role="status"></div>
-</form>
+</section>
+<section class="section soft" id="approach">
+<div class="container">
+<div class="section-head">
+<div class="kicker" data-ar="خطّط لانطلاقة مدروسة" data-fr="PRÉPAREZ VOTRE LANCEMENT">خطّط لانطلاقة مدروسة</div>
+<h2 data-ar="أسّس مشروعك على رؤية واضحة" data-fr="Donnez une base solide à votre projet">أسّس مشروعك على رؤية واضحة</h2>
+<p data-ar="ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك." data-fr="Définissez les besoins de votre projet : les services envisagés, les compétences nécessaires et un emplacement adapté à votre clientèle.">ابدأ بتحديد احتياجات مشروعك: طبيعة الخدمات، والخبرة المطلوبة، والموقع المناسب للوصول إلى عملائك.</p>
+</div>
+<div class="benefits">
+<article class="benefit"><div class="benefit-icon">↗</div><h3 data-ar="خدمات قريبة من العملاء" data-fr="Des services de proximité">خدمات قريبة من العملاء</h3><p data-ar="حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك." data-fr="Identifiez les besoins du quartier et les services que vous souhaitez proposer.">حدّد احتياجات سكان المنطقة والخدمات التي ترغب في تقديمها من خلال وكالتك.</p></article>
+<article class="benefit"><div class="benefit-icon">◎</div><h3 data-ar="التكوين والاستعداد" data-fr="Formation et préparation">التكوين والاستعداد</h3><p data-ar="حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع." data-fr="Précisez vos besoins en formation et en gestion, puis renseignez-vous sur les conditions d’accompagnement.">حدّد احتياجاتك في التكوين والتسيير، واستفسر عن شروط المواكبة قبل بدء المشروع.</p></article>
+<article class="benefit"><div class="benefit-icon">⌖</div><h3 data-ar="اختيار الموقع المناسب" data-fr="Un emplacement adapté">اختيار الموقع المناسب</h3><p data-ar="وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك." data-fr="Précisez la situation du local, sa superficie et son accessibilité pour présenter clairement votre projet.">وضّح موقع المحل ومساحته وسهولة الوصول إليه، لتقديم صورة دقيقة عن مشروعك.</p></article>
 </div>
 </div>
 </section>
@@ -520,14 +661,13 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
       const submitButton = form.querySelector('[type="submit"]');
       const submitText = submitButton.querySelector('span');
       const readValue = id => document.getElementById(id).value.trim();
-      const geo = readValue('geoLocation');
       // Send only columns used by this version of the Supabase table.
       // This avoids PostgREST errors caused by sending unknown column names.
       const payload = {
         fullname: readValue('fullname'),
         phone: phoneClean,
         city: readValue('city'),
-        address: geo || null,
+        address: null,
         consent: document.getElementById('consent').checked,
         language: submittedLang
       };
@@ -577,44 +717,20 @@ body[data-page="form"] #formulaire{display:block;min-height:calc(100vh - 90px);p
 
     const startApplication = document.getElementById('startApplication');
     const backToWelcome = document.getElementById('backToWelcome');
-    function showPage(page) {
-      document.body.dataset.page = page;
-      window.scrollTo({top: 0, behavior: 'smooth'});
-      if (page === 'form') document.getElementById('fullname').focus({preventScroll:true});
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.focus({preventScroll: true});
+      section.scrollIntoView({block: 'start'});
     }
-    startApplication.addEventListener('click', () => showPage('form'));
-    backToWelcome.addEventListener('click', () => showPage('welcome'));
-
-    const getLocationButton = document.getElementById('getLocation');
-    const locationStatus = document.getElementById('locationStatus');
-    getLocationButton.addEventListener('click', () => {
-      if (!('geolocation' in navigator)) {
-        locationStatus.textContent = currentLang === 'ar' ? 'المتصفح لا يدعم تحديد الموقع.' : 'La géolocalisation n’est pas prise en charge.';
-        return;
-      }
-      getLocationButton.disabled = true;
-      locationStatus.textContent = currentLang === 'ar' ? 'جارٍ طلب إذن تحديد الموقع…' : 'Demande d’autorisation de localisation…';
-      navigator.geolocation.getCurrentPosition(position => {
-        const lat = position.coords.latitude.toFixed(6);
-        const lon = position.coords.longitude.toFixed(6);
-        document.getElementById('geoLocation').value = `GPS: ${lat}, ${lon}`;
-        locationStatus.textContent = currentLang === 'ar' ? `تم تحديد الموقع بنجاح. الإحداثيات: ${lat}, ${lon}` : `Position détectée : ${lat}, ${lon}`;
-        getLocationButton.disabled = false;
-      }, error => {
-        const messages = currentLang === 'ar'
-          ? {1:'لم تسمح بالوصول إلى الموقع. يمكنك متابعة الاستمارة دون تحديده.',2:'تعذر تحديد الموقع حاليًا. تحقق من إعدادات GPS.',3:'انتهت مهلة تحديد الموقع. حاول مرة أخرى.'}
-          : {1:'Autorisation refusée. Vous pouvez continuer sans géolocalisation.',2:'Position indisponible. Vérifiez les réglages GPS.',3:'Délai dépassé. Réessayez.'};
-        locationStatus.textContent = messages[error.code] || messages[2];
-        getLocationButton.disabled = false;
-      }, {enableHighAccuracy:true, timeout:15000, maximumAge:60000});
-    });
+    startApplication.addEventListener('click', () => scrollToSection('formulaire'));
+    backToWelcome.addEventListener('click', () => scrollToSection('accueil'));
 
     setLanguage("ar");
   
 
 (() => {
  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
- const targets = document.querySelectorAll('.section-head, .benefit, .form-aside, form, .step, .faq-layout > div');
+ const targets = document.querySelectorAll('.benefit, .step, .faq-layout > div');
  if ('IntersectionObserver' in window && !reduceMotion.matches) {
   document.body.classList.add('motion-ready');
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
