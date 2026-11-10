@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2423813115101048');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
   <style>
     *{box-sizing:border-box}
     :root{--bg:#f6d949;--ink:#26301e;--muted:#475334;--font-ar:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;--font-fr:"Inter","Segoe UI",Arial,sans-serif}
@@ -23,18 +37,18 @@
     .kicker{display:block;color:#526034;font-size:14px;font-weight:800}
     h1{font-size:clamp(32px,5vw,48px);line-height:1.5;font-weight:800;margin:14px 0}
     p{max-width:490px;margin:0 auto;color:var(--muted);font-size:17px;line-height:2}
-    .disclosure{max-width:500px;margin:22px auto 0;padding:12px 16px;border:1px solid #26301e30;border-radius:12px;color:#3f4b2d;background:#ffffff30;font-size:13px;line-height:1.9}
     .line{width:45px;height:3px;border-radius:5px;background:#26301e45;margin:30px auto 0}
     @keyframes enter{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
     @keyframes check{to{stroke-dashoffset:0}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}.icon path{stroke-dashoffset:0}}
-    @media(max-width:500px){body{padding:24px}.brand{margin-bottom:35px}.icon{width:90px;height:90px}p{font-size:15px}.disclosure{font-size:12px}}
+    @media(max-width:500px){body{padding:24px}.brand{margin-bottom:35px}.icon{width:90px;height:90px}p{font-size:15px}}
     html[lang=fr] body{direction:ltr;font-family:var(--font-fr);line-height:1.75}
     html[lang=fr] .brand{font-family:var(--font-fr);letter-spacing:.02em}
     html[lang=fr] h1{font-weight:700;letter-spacing:-.035em;line-height:1.2}
   </style>
 </head>
 <body>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2423813115101048&amp;ev=PageView&amp;noscript=1"></noscript>
   <main class="thank">
     <span class="brand" id="brand">مشروع مستقل</span>
     <div class="icon" aria-hidden="true">
@@ -45,7 +59,6 @@
     <span class="kicker" id="kicker">تم استلام معلوماتك</span>
     <h1 id="title">تم تسجيل طلبك بنجاح</h1>
     <p id="message">شكرًا لإرسال طلبك. تم استلام المعلومات التي أدخلتها، وسيتواصل معك مسؤول هذا المشروع المستقل عبر بيانات الاتصال التي قدمتها إذا كانت هناك حاجة إلى متابعة الطلب.</p>
-   
     <div class="line" aria-hidden="true"></div>
   </main>
   <script>
@@ -59,7 +72,6 @@
       document.getElementById("kicker").textContent = "CONFIRMATION DE RÉCEPTION";
       document.getElementById("title").textContent = "Votre demande a bien été enregistrée";
       document.getElementById("message").textContent = "Merci d’avoir envoyé votre demande. Les informations saisies ont bien été reçues. Le responsable de ce projet indépendant pourra vous contacter aux coordonnées fournies si un suivi est nécessaire.";
-      document.getElementById("disclosure").textContent = "Information : cette page appartient à un projet indépendant. Elle ne représente pas Wafacash ni aucune autre institution financière ou marque, et ne prétend à aucun partenariat ou agrément officiel.";
     })();
   </script>
 </body>
