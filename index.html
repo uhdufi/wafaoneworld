@@ -657,13 +657,10 @@ footer .brand-name { background: #2b2415; color: var(--paper); border-color: #67
       // Send only columns used by this version of the Supabase table.
       // This avoids PostgREST errors caused by sending unknown column names.
       const payload = {
-        fullname: readValue('fullname'),
-        phone: phoneClean,
-        city: readValue('city'),
-        address: null,
-        consent: false,
-        language: submittedLang
-      };
+  fullname: readValue('fullname'),
+  phone: phoneClean,
+  city: readValue('city')
+};
       form.dataset.sending = 'true';
       submitButton.disabled = true;
       langButton.disabled = true;
